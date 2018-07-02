@@ -99,6 +99,7 @@ public class Victim : MonoBehaviour
                  timeout,
                  currentBloodPercentage = 1,
                  bodytemp;
+    public VictimInjruyDisplay display;
 
     public ConditionTag victimTag = ConditionTag.Untagged,
                         userTag = ConditionTag.Untagged;
@@ -147,6 +148,8 @@ public class Victim : MonoBehaviour
         renderers = GetComponentsInChildren<Renderer>();
 
         this.InjuredBodyParts();
+        Debug.Log(transform.name + ":" + injuredBodyParts.Count);
+        display = GetComponent<VictimInjruyDisplay>();
     }
 
     // Update is called once per frame
@@ -163,11 +166,15 @@ public class Victim : MonoBehaviour
             SetRespRate(CalcResperationRate());
             CheckRadialPulse();
             CheckResponsiveness();
+           
+
 
             timer -= timeout;
         }
+        display.VictimBleed(GetTotalBloodLossRate()*.0001f);
             CheckCondition();
     }
+    
 
 
     // Private functions // 
@@ -531,7 +538,7 @@ public class Victim : MonoBehaviour
         injuredBodyParts = new List<BodyPart>();
         for (int i = 0; i < bodyParts.Length; i++)
         {
-            if (bodyParts[i].NumberOfInjuries()<0)
+            if (bodyParts[i].NumberOfInjuries()>0)
             {
                 injuredBodyParts.Add(bodyParts[i]);
             }
