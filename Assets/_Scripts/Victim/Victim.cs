@@ -150,6 +150,10 @@ public class Victim : MonoBehaviour
         this.InjuredBodyParts();
         Debug.Log(transform.name + ":" + injuredBodyParts.Count);
         display = GetComponent<VictimInjruyDisplay>();
+
+
+        // Set body parts to ignore main collider
+
     }
 
     // Update is called once per frame
