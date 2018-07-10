@@ -56,10 +56,13 @@ public class VictimUIUpdater : MonoBehaviour {
 	void Update () 
     {
 
+        
+
         respiratoryRate.transform.GetChild(1).GetComponent<Text>().text = victimScript.GetRespRate().ToString() + "r/s";
         capillaryRefill.transform.GetChild(1).GetComponent<Text>().text = victimScript.GetCapillaryRefillTime().ToString() + " s";
         radialPulse.transform.GetChild(1).GetComponent<Text>().text = victimScript.hasRadialPulse.ToString();
         TagColor(victimScript.GetUserTag());
+
     }
     void TagColor(ConditionTag tag) 
     {
