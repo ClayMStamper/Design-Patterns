@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/VRTest.unity
+- path: Assets/_Scenes/RoadEnvironment.unity
   isLoaded: 1
   isActive: 1

@@ -8,8 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: mat_eyes
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _METALLICGLOSSMAP _METALLICSPECGLOSSMAP _NORMALMAP
-  m_LightmapFlags: 4
+  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _METALLICSPECGLOSSMAP _NORMALMAP
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -112,5 +112,5 @@ Material:
     m_Colors:
     - Color_9A8DB259: {r: 0, g: 1, b: 0.1000776, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.2769224, g: 0.42410555, b: 0.46226418, a: 1}
+    - _EmissionColor: {r: 0.48340157, g: 0.62903416, b: 0.6698113, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

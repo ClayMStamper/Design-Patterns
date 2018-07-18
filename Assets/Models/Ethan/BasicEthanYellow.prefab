@@ -2546,6 +2546,8 @@ GameObject:
   - component: {fileID: 95408465468940640}
   - component: {fileID: 54442991948990624}
   - component: {fileID: 65111602625969656}
+  - component: {fileID: 114260864098489294}
+  - component: {fileID: 114510574738809614}
   m_Layer: 0
   m_Name: BasicEthanYellow
   m_TagString: victim
@@ -3683,8 +3685,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780710210754970}
-  m_LocalRotation: {x: 0.000016627067, y: 0.97361785, z: -0.000018843939, w: 0.22818474}
-  m_LocalPosition: {x: 2.0977361, y: 0.069343984, z: 2.0307157}
+  m_LocalRotation: {x: -0, y: 0.99832493, z: -0, w: 0.05785669}
+  m_LocalPosition: {x: 1.27, y: 0, z: 1.735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224416756089487442}
@@ -3699,7 +3701,7 @@ Transform:
   - {fileID: 4147715464055924}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 153.62001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 173.36601, z: 0}
 --- !u!4 &4169189560022230
 Transform:
   m_ObjectHideFlags: 1
@@ -6021,8 +6023,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.9473794, z: 1}
-  m_Center: {x: 0, y: 0.88702214, z: 0}
+  m_Size: {x: 0.4756297, y: 1.970146, z: 0.2823617}
+  m_Center: {x: 0.02210978, y: 0.8984056, z: -0.03428634}
 --- !u!95 &95408465468940640
 Animator:
   serializedVersion: 3
@@ -6031,7 +6033,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780710210754970}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 749fef36803a7d044af7d64104dca577, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 81641c4693fd6554a8b3421373b9c642, type: 3}
   m_Controller: {fileID: 9100000, guid: b4f1f362f192b6c45b123025320e78b3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -6053,11 +6055,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  isMoving: 0
-  isResponding: 0
+  isMoving: 1
+  isResponding: 1
   isDead: 0
-  canFollowSimpleComands: 0
-  hasRadialPulse: 0
+  canFollowSimpleComands: 1
+  hasRadialPulse: 1
+  isConscious: 1
+  canStand: 0
   victimName: BasicEthanYellow
   victimWeight: 180
   totalBloodLossRate: 35
@@ -6070,7 +6074,8 @@ MonoBehaviour:
   timeout: 0.25
   currentBloodPercentage: 0
   bodytemp: 0
-  victimTag: 3
+  display: {fileID: 0}
+  victimTag: 1
   userTag: 5
 --- !u!114 &114121336945451770
 MonoBehaviour:
@@ -6170,6 +6175,21 @@ MonoBehaviour:
   m_EffectColor: {r: 0.24528301, g: 0.24181202, b: 0.24181202, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &114260864098489294
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780710210754970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23744353f9ade04db803f2ee6e6545f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headMaterial: {fileID: 0}
+  bodyMaterial: {fileID: 0}
+  headInjuryMasks: []
+  bodyInjuryMasks: []
 --- !u!114 &114289812283973464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6324,6 +6344,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114510574738809614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780710210754970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe344467b58b694449ba8123060750be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114531946354516342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6687,7 +6718,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300004, guid: d9e1defd868d25c4daf145643e1b57c5, type: 3}
   m_Bones:
@@ -6873,7 +6904,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300010, guid: d9e1defd868d25c4daf145643e1b57c5, type: 3}
   m_Bones:
@@ -7059,7 +7090,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300006, guid: d9e1defd868d25c4daf145643e1b57c5, type: 3}
   m_Bones:
@@ -7226,7 +7257,7 @@ SkinnedMeshRenderer:
   - {fileID: 2100000, guid: 26259f48bbffd4f4886d06e5f090f00c, type: 2}
   - {fileID: 2100000, guid: 7df0fa4cc0289384fa9f157da4cf33ed, type: 2}
   - {fileID: 2100000, guid: 41d216a185b3f1b4e894a4dc597c3d35, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: b79f727b389b5cd43806571f484500a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7248,7 +7279,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300012, guid: d9e1defd868d25c4daf145643e1b57c5, type: 3}
   m_Bones:
@@ -7435,7 +7466,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300008, guid: d9e1defd868d25c4daf145643e1b57c5, type: 3}
   m_Bones:
@@ -7621,7 +7652,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300002, guid: d9e1defd868d25c4daf145643e1b57c5, type: 3}
   m_Bones:
@@ -7808,7 +7839,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300000, guid: d9e1defd868d25c4daf145643e1b57c5, type: 3}
   m_Bones:

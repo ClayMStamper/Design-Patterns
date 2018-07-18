@@ -84,7 +84,9 @@ public class Victim : MonoBehaviour
                 isResponding,
                 isDead,
                 canFollowSimpleComands,
-                hasRadialPulse;
+                hasRadialPulse,
+                isConscious,
+                canStand;
 
     public string victimName = "Victim";
    
@@ -171,12 +173,27 @@ public class Victim : MonoBehaviour
             CheckRadialPulse();
             CheckResponsiveness();
            
-
-
             timer -= timeout;
         }
         display.VictimBleed(GetTotalBloodLossRate()*.0001f);
-            CheckCondition();
+        CheckCondition();
+
+        // Update every 5 frames
+
+        if (Mathf.Floor(Time.deltaTime) % 19 == 0)
+        {
+        // Update values, then set anim flags to match values
+        CalcResperationRate();
+            /*
+            CalcCanStand();
+            CalcIsConscious();
+            */
+            SetVictimBreathingRate(respRate);
+            SetVictimCanStand(canStand);
+            SetVictimIsConscious(isConscious);
+            
+        }
+
     }
     
 
@@ -355,6 +372,45 @@ public class Victim : MonoBehaviour
     }
 
 
+    /* Function: SetVictimCanStand()
+     * Type: Void
+     * Receives: Bool canStand
+     * Returnsd: N/A
+     * 
+     * Objective: Will set the status of the Animator anim's paramter canStand 
+     */
+
+    void SetVictimCanStand(bool canStand)
+    {
+        anim.SetBool("canVictimStand", canStand);
+    }
+
+    /* Function: SetVictimCanStand()
+    * Type: Void
+    * Receives: Bool canStand
+    * Returnsd: N/A
+    * 
+    * Objective: Will set the status of the Animator anim's paramter isConscious 
+    */
+
+    void SetVictimIsConscious(bool isConscious)
+    {
+        anim.SetBool("isVictimConscious", isConscious);
+        anim.speed = 1;
+    }
+
+    /* Function: SetVictimBreathingRate()
+    * Type: Void
+    * Receives: Float rate
+    * Returnsd: N/A
+    * 
+    * Objective: Will set the status of the Animator anim's paramter BreathingRate 
+    */
+
+    void SetVictimBreathingRate(float rate)
+    {
+        anim.SetFloat("BreathingRate", rate);
+    }
 
     /*
         CalcTotalBLR() -- This will calculate (based on how we decide) the blood loss rate
@@ -463,7 +519,6 @@ public class Victim : MonoBehaviour
             canFollowSimpleComands = false;
         else if (currentBloodPercentage <= 0.50f)
             canFollowSimpleComands = false;
-        
     }
 
     void CheckRadialPulse()
@@ -537,6 +592,62 @@ public class Victim : MonoBehaviour
         
     }
 
+    /* 
+     * Function: CalcCanStand()
+    * Type: Void
+    * Receives: N/A
+    * Returns: N/A
+    * 
+    * Objective: Will set canStand to true if injuries do 
+    * not prevent victim from standing. Otherwise false.
+    * */
+    void CalcCanStand()
+    {
+
+        // First make sure he's not dead or unconscious
+        if (this.isDead || !this.isConscious)
+        {
+            canStand = false;
+        } else // Second check the ol' walkers for severe injury
+        {
+            canStand = true; // Assume good unless legs tell us otherwise
+
+            foreach (BodyPart bp in bodyParts)
+            {
+                // body part is a walker and has a condition below usable min
+                if (bp.GetIsPedal() && bp.GetCondition() < bp.GetUsableMin())
+                {
+                    canStand = false;
+                }
+            }
+        }
+
+
+    }
+
+    /* 
+     * Function: CalcIsConscious()
+     * Type: Void
+     * Receives: N/A
+     * Returns: N/A
+     * 
+     * Objective: Will set isConscious to true if injuries do 
+     * not prevent victim from being awake. Otherwise false.
+     * */
+    void CalcIsConscious()
+    {
+        if (this.isDead) // easy case, never awake if dead (we hope)
+        {
+            isConscious = false;
+        }
+        else
+        {
+            // FINISH THIS ONCE WE KNOW HOW TO DETERMINE CONSCIOUSNESS!
+            isConscious = true;
+        }
+
+    }
+
     void InjuredBodyParts()
     {
         injuredBodyParts = new List<BodyPart>();
@@ -564,7 +675,6 @@ public class Victim : MonoBehaviour
     }
 
 
-
     ///MAKING THE BASIC BOIS!
     public void InitVictim(string name, BodyPart[] bodyParts) 
         {
@@ -577,20 +687,20 @@ public class Victim : MonoBehaviour
         } 
         else if (name == "BasicEthanYellow") 
         {  //Expected total BLR == 25
-            foreach (BodyPart bp in bodyParts)
+
+            bodyParts[4].AddInjury(new Laceration(25));
+            /*foreach (BodyPart bp in bodyParts)
             {
-                bp.AddInjury(new Laceration(2.5f));
-            }
+                bp.AddInjury(new Laceration(1.5f));
+            }*/
         } 
         else if (name == "BasicEthanRed") 
         {  //Expected total BLR == 80
-
             bodyParts[0].AddInjury(new Laceration(10));
             bodyParts[0].AddInjury(new Laceration(15));
 
             bodyParts[4].AddInjury(new Laceration(30));
             bodyParts[4].AddInjury(new Laceration(25));
-
         }
     }
 

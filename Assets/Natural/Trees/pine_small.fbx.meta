@@ -1,22 +1,37 @@
 fileFormatVersion: 2
 guid: 4b1ba927d329de742a77298e3efc88f4
-timeCreated: 1525303215
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: leaves
     100002: //RootNode
+    100004: Camera
+    100006: Lamp
+    100008: leaves.001
+    100010: Plane
     400000: leaves
     400002: //RootNode
+    400004: Camera
+    400006: Lamp
+    400008: leaves.001
+    400010: Plane
+    2000000: Camera
     2100000: Material.002
     2100002: Material.001
+    2100004: No Name
     2300000: leaves
     2300002: //RootNode
+    2300004: leaves.001
+    2300006: Plane
     3300000: leaves
     3300002: //RootNode
+    3300004: leaves.001
+    3300006: Plane
     4300000: tree
     4300002: leaves
+    4300004: leaves.001
+    4300006: Plane
+    10800000: Lamp
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -46,6 +61,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
