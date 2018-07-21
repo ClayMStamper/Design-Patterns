@@ -3,8 +3,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using Oculus.Avatar;
 using System.Collections;
-/***
- 
+
 public class OvrAvatarMaterialManager : MonoBehaviour
 {
     // Set up in the Prefab, and meant to be indexed by LOD
@@ -351,4 +350,3 @@ public class OvrAvatarMaterialManager : MonoBehaviour
         ApplyMaterialPropertyBlock();
     }
 }
-***/

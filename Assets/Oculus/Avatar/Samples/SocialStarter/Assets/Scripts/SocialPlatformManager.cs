@@ -6,7 +6,7 @@ using Oculus.Avatar;
 using Oculus.Platform;
 using Oculus.Platform.Models;
 
-/*
+
 // This class coordinates communication with the Oculus Platform
 // Service running in your device.
 public class SocialPlatformManager : MonoBehaviour
@@ -81,14 +81,12 @@ public class SocialPlatformManager : MonoBehaviour
         // update avatar mouths to match voip volume
         foreach (KeyValuePair<ulong, RemotePlayer> kvp in remoteUsers)
         {
-            
             float remoteVoiceCurrent = Mathf.Clamp(kvp.Value.voipSource.peakAmplitude * VOIP_SCALE, 0f, 1f);
             kvp.Value.RemoteAvatar.VoiceAmplitude = remoteVoiceCurrent;
         }
 
         if (localAvatar != null)
         {
-            
             localAvatar.VoiceAmplitude = Mathf.Clamp(voiceCurrent * VOIP_SCALE, 0f, 1f);
         }
     }
@@ -178,6 +176,7 @@ public class SocialPlatformManager : MonoBehaviour
             helpPanel.transform.localPosition = new Vector3(0, 0.2f, 0.2f);
             helpMesh.material = riftMaterial;
         }
+        
         localAvatar.oculusUserIDInternal = myID;
         localAvatar.RecordPackets = true;
         localAvatar.PacketRecorded += OnLocalAvatarPacketRecorded;
@@ -555,4 +554,3 @@ public class SocialPlatformManager : MonoBehaviour
     #endregion
 
 }
-*/
