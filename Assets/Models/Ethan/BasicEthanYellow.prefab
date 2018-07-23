@@ -3175,7 +3175,7 @@ GameObject:
   - component: {fileID: 223368593422783736}
   - component: {fileID: 114962525992609334}
   - component: {fileID: 114199072967308456}
-  - component: {fileID: 114829716535633640}
+  - component: {fileID: 114694962770255886}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3685,8 +3685,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780710210754970}
-  m_LocalRotation: {x: -0, y: 0.99832493, z: -0, w: 0.05785669}
-  m_LocalPosition: {x: 1.27, y: 0, z: 1.735}
+  m_LocalRotation: {x: -0.48551187, y: 0.4456008, z: 0.52069557, w: 0.5427654}
+  m_LocalPosition: {x: 132.7676, y: 20.954, z: 29.351}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224416756089487442}
@@ -3701,7 +3701,7 @@ Transform:
   - {fileID: 4147715464055924}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 173.36601, z: 0}
+  m_LocalEulerAnglesHint: {x: -82.343, y: -9.457001, z: 95.898}
 --- !u!4 &4169189560022230
 Transform:
   m_ObjectHideFlags: 1
@@ -6023,8 +6023,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4756297, y: 1.970146, z: 0.2823617}
-  m_Center: {x: 0.02210978, y: 0.8984056, z: -0.03428634}
+  m_Size: {x: 0.4756297, y: 1.8715348, z: 0.2823617}
+  m_Center: {x: 0.022109434, y: 0.9477123, z: -0.034286335}
 --- !u!95 &95408465468940640
 Animator:
   serializedVersion: 3
@@ -6541,6 +6541,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Respiratory Rate:'
+--- !u!114 &114694962770255886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987928871889400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc64e6e2a36c3d4eaa1a86d57e5bdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114730172349995130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6583,17 +6594,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.24528301, g: 0.24181202, b: 0.24181202, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &114829716535633640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987928871889400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfc64e6e2a36c3d4eaa1a86d57e5bdcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114889016048111472
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -100,7 +100,7 @@ public class OvrAvatarRenderComponent : MonoBehaviour {
         {
             throw new Exception("No shader provided for avatar material.");
         }
-        Material mat = new Material(shader);
+        Material mat = new Material(Shader.Find("graphs/AvatarHandMasterShader"));
         mat.name = name;
         return mat;
     }

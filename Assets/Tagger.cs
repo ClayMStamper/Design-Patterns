@@ -134,7 +134,7 @@ public class Tagger : MonoBehaviour
 
                 if (other.GetComponent<Renderer>().material.color == Color.red)
                     playerTagColor = ConditionTag.Red;
-                else if (other.GetComponent<Renderer>().material.color == Color.yellow || other.transform.name == "Yellow")
+                else if (other.GetComponent<Renderer>().material.color == Color.yellow || other.transform.name == "Yellow") 
                     playerTagColor = ConditionTag.Yellow;
                 else if (other.GetComponent<Renderer>().material.color == Color.green)
                     playerTagColor = ConditionTag.Green;
