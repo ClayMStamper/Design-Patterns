@@ -7,9 +7,9 @@ public class InjuryUIHandler : MonoBehaviour
 {
     BodyPart bodyPartScript;
 
-    public const int NUM_BP = 6;
+    public const int NUM_BP = 10; // needs to be changed 
 
-    public InjuryUIManager UIManager;
+    public GameManager UIManager;
 
     public GameObject bone,
                       uiDisplayLocation,

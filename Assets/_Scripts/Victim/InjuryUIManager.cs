@@ -10,13 +10,17 @@ public class InjuryUIManager : MonoBehaviour
     public Sprite[] Head,
                     Neck,
                     Torso,
-                    Arm,
+                    L_Arm,
+                    R_Arm,
                     Abdomen,
                     Pelvis,
-                    Leg,
+                    L_Leg,
+                    R_Leg,
                     Spine,
-                    Hand,
-                    Foot;
+                    L_Hand,
+                    R_Hand,
+                    L_Foot,
+                    R_Foot;
 
 	void Start()
 	{
@@ -37,8 +41,11 @@ public class InjuryUIManager : MonoBehaviour
             case BodyParts.Torso:
                 return Torso;
 
-            case BodyParts.Arm:
-                return Arm;
+            case BodyParts.L_Arm:
+                return L_Arm;
+
+            case BodyParts.R_Arm:
+                return R_Arm;
 
             case BodyParts.Abdomen:
                 return Abdomen;
@@ -46,17 +53,26 @@ public class InjuryUIManager : MonoBehaviour
             case BodyParts.Pelvis:
                 return Pelvis;
 
-            case BodyParts.Leg:
-                return Leg;
+            case BodyParts.L_Leg:
+                return L_Leg;
+
+            case BodyParts.R_Leg:
+                return R_Leg;
 
             case BodyParts.Spine:
                 return Spine;
 
-            case BodyParts.Hand:
-                return Hand;
+            case BodyParts.L_Hand:
+                return L_Hand;
 
-            case BodyParts.Foot:
-                return Foot;
+            case BodyParts.R_Hand:
+                return R_Hand;
+
+            case BodyParts.L_Foot:
+                return L_Foot;
+
+            case BodyParts.R_Foot:
+                return R_Foot;
             
             default:
                 return null;

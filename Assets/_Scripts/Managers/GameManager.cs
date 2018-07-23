@@ -14,16 +14,20 @@ public class GameManager : MonoBehaviour
     public Sprite[] Head,
                     Neck,
                     Torso,
-                    Arm,
+                    L_Arm,
+                    R_Arm,
                     Abdomen,
                     Pelvis,
-                    Leg,
+                    L_Leg,
+                    R_Leg,
                     Spine,
-                    Hand,
-                    Foot;
+                    L_Hand,
+                    R_Hand,
+                    L_Foot,
+                    R_Foot;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         victimScript = GetComponent<Victim>();
 
@@ -100,8 +104,11 @@ public class GameManager : MonoBehaviour
             case BodyParts.Torso:
                 return Torso;
 
-            case BodyParts.Arm:
-                return Arm;
+            case BodyParts.L_Arm:
+                return L_Arm;
+
+            case BodyParts.R_Arm:
+                return R_Arm;
 
             case BodyParts.Abdomen:
                 return Abdomen;
@@ -109,17 +116,26 @@ public class GameManager : MonoBehaviour
             case BodyParts.Pelvis:
                 return Pelvis;
 
-            case BodyParts.Leg:
-                return Leg;
+            case BodyParts.L_Leg:
+                return L_Leg;
+
+            case BodyParts.R_Leg:
+                return R_Leg;
 
             case BodyParts.Spine:
                 return Spine;
 
-            case BodyParts.Hand:
-                return Hand;
+            case BodyParts.L_Hand:
+                return L_Hand;
 
-            case BodyParts.Foot:
-                return Foot;
+            case BodyParts.R_Hand:
+                return R_Hand;
+
+            case BodyParts.L_Foot:
+                return L_Foot;
+
+            case BodyParts.R_Foot:
+                return R_Foot;
 
             default:
                 return null;
@@ -132,9 +148,13 @@ public class GameManager : MonoBehaviour
 
         Head = Resources.LoadAll<Sprite>("XraySprites/EthanHead");
         Torso = Resources.LoadAll<Sprite>("XraySprites/EthanTorso");
-        Arm = Resources.LoadAll<Sprite>("XraySprites/EthanArm");
-        Leg = Resources.LoadAll<Sprite>("XraySprites/EthanLegs");
-        Hand = Resources.LoadAll<Sprite>("XraySprites/EthanHand");
-        Foot = Resources.LoadAll<Sprite>("XraySprites/EthanFoot");
+        L_Arm = Resources.LoadAll<Sprite>("XraySprites/EthanArm/LeftArm");
+        R_Arm = Resources.LoadAll<Sprite>("XraySprites/EthanArm/RightArm");
+        L_Leg = Resources.LoadAll<Sprite>("XraySprites/EthanLegs/LeftLeg");
+        R_Leg = Resources.LoadAll<Sprite>("XraySprites/EthanLegs/RightLeg");
+        L_Hand = Resources.LoadAll<Sprite>("XraySprites/EthanHand/LeftHand");
+        R_Hand = Resources.LoadAll<Sprite>("XraySprites/EthanHand/RightHand");
+        L_Foot = Resources.LoadAll<Sprite>("XraySprites/EthanFoot/LeftFoot");
+        R_Foot = Resources.LoadAll<Sprite>("XraySprites/EthanFoot/RightFoot");
     }
 }

@@ -122,17 +122,17 @@ public class Victim : MonoBehaviour
         bodyParts[0] = new BodyPart("Head", BodyParts.Head);
         bodyParts[1] = new BodyPart("Neck", BodyParts.Neck);
         bodyParts[2] = new BodyPart("Torso", BodyParts.Torso);
-        bodyParts[3] = new BodyPart("LArm", BodyParts.Arm);
-        bodyParts[4] = new BodyPart("RArm", BodyParts.Arm);
+        bodyParts[3] = new BodyPart("LArm", BodyParts.L_Arm);
+        bodyParts[4] = new BodyPart("RArm", BodyParts.R_Arm);
         bodyParts[5] = new BodyPart("Abdomen", BodyParts.Abdomen);
         bodyParts[6] = new BodyPart("Pelvis", BodyParts.Pelvis);
-        bodyParts[7] = new BodyPart("LLeg", BodyParts.Leg);
-        bodyParts[8] = new BodyPart("RLeg", BodyParts.Leg);
+        bodyParts[7] = new BodyPart("LLeg", BodyParts.L_Leg);
+        bodyParts[8] = new BodyPart("RLeg", BodyParts.R_Leg);
         bodyParts[9] = new BodyPart("Spine", BodyParts.Spine);
-        bodyParts[10] = new BodyPart("RHand", BodyParts.Hand);
-        bodyParts[11] = new BodyPart("LHand", BodyParts.Hand);
-        bodyParts[12] = new BodyPart("RFoot", BodyParts.Foot);
-        bodyParts[13] = new BodyPart("LFoot", BodyParts.Foot);
+        bodyParts[10] = new BodyPart("RHand", BodyParts.R_Hand);
+        bodyParts[11] = new BodyPart("LHand", BodyParts.L_Hand);
+        bodyParts[12] = new BodyPart("RFoot", BodyParts.R_Foot);
+        bodyParts[13] = new BodyPart("LFoot", BodyParts.L_Foot);
 
         if(this.tag == "victim") //BasicPeeps
         {

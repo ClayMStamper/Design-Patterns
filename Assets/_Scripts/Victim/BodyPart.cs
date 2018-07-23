@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Preset body part enums
-public enum BodyParts { Head, Neck, Torso, Arm, Abdomen, Pelvis, Leg, Spine, Hand, Foot, NULL };
+public enum BodyParts { Head, Neck, Torso, L_Arm, R_Arm, Abdomen, Pelvis, L_Leg, R_Leg, Spine, L_Hand, R_Hand, L_Foot, R_Foot, NULL };
 
 public class BodyPart
 {
@@ -84,7 +84,8 @@ public class BodyPart
                 usableMin = 50;
                 break;
 
-            case BodyParts.Arm:
+            case BodyParts.L_Arm:
+            case BodyParts.R_Arm:
                 isLimb = true;
                 isNeural = false;
                 isVital = false;
@@ -116,7 +117,8 @@ public class BodyPart
                 usableMin = 50;
                 break;
 
-            case BodyParts.Leg:
+            case BodyParts.L_Leg:
+            case BodyParts.R_Leg:
                 isLimb = true;
                 isNeural = false;
                 isVital = false;
@@ -132,7 +134,8 @@ public class BodyPart
                 usableMin = 50;
                 break;
 
-            case BodyParts.Hand:
+            case BodyParts.L_Hand:
+            case BodyParts.R_Hand:
                 isLimb = true;
                 isNeural = false;
                 isVital = false;
@@ -140,7 +143,8 @@ public class BodyPart
                 usableMin = 50;
                 break;
 
-            case BodyParts.Foot:
+            case BodyParts.L_Foot:
+            case BodyParts.R_Foot:
                 isLimb = true;
                 isNeural = false;
                 isVital = false;
