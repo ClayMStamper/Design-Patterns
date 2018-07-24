@@ -153,6 +153,65 @@ public class Tagger : MonoBehaviour
         }
     }
 
+        else if(other.CompareTag("Head") || other.CompareTag("Torso") || other.CompareTag("RightArm") || other.CompareTag("LeftArm") || other.CompareTag("RightHand") ||
+                other.CompareTag("LeftHand") || other.CompareTag("RightLeg") || other.CompareTag("LeftLeg") || other.CompareTag("RightFoot") || other.CompareTag("LeftFoot"))
+        {
+            Debug.Log("This is the Collider that you hit: " + other.name);
+            Debug.Log("This is the child(0)" + other.transform.GetChild(0).name);
+
+            if (!other.transform.GetChild(0).gameObject.activeSelf)
+                other.transform.GetChild(0).gameObject.SetActive(true);
+            else
+                other.transform.GetChild(0).gameObject.SetActive(false);
+                
+                switch(other.tag)
+                {
+                    case "Head": //Head
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.Head);
+                        break;
+
+                    case "Torso": //Torso
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.Torso);
+                        break;
+
+                    case "RightArm": //RightArm
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.R_Arm);
+                        break;
+
+                    case "LeftArm": //LeftArm
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.L_Arm);
+                        break;
+
+                    case "RightHand": //RightHand
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.R_Hand);
+                        break;
+
+                    case "LeftHand": //LeftHand
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.L_Hand);
+                        break;
+
+                    case "RightLeg": //RightLeg
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.R_Leg);
+                        break;
+
+                    case "LeftLeg": //LeftLeg
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.L_Leg);
+                        break;
+
+                    case "RightFoot": //RightFoot
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.R_Foot);
+                        break;
+
+                    case "LeftFoot": //LeftFoot
+                        other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.L_Foot);
+                        break;
+
+                    default:
+                    other.transform.GetChild(0).gameObject.SetActive(false);
+                        break;
+                }
+        }
+
 
     }
 }

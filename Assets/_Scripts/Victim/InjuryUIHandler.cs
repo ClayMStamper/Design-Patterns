@@ -5,14 +5,20 @@ using UnityEngine.UI;
 
 public class InjuryUIHandler : MonoBehaviour 
 {
+    enum BreakSeverity {NOTBROKEN, BREAKONE, BREAKTWO, BREAKTHREE, SPECIALCASE };
+
+    int breakSeverity;
+
     BodyPart bodyPartScript;
+
+    BodyParts selectedPart;
 
     public const int NUM_BP = 10; // needs to be changed 
 
     public GameManager UIManager;
 
     public GameObject bone,
-                      uiDisplayLocation,
+                      //uiDisplayLocation,
                       uiParent,
                       header,
                       condition;
@@ -27,7 +33,7 @@ public class InjuryUIHandler : MonoBehaviour
                   break2 = "2 / 3",
                   break3 = "3 / 3";
 
-    public int breakSeverity = 4;
+    //public int breakSeverity = 4;
 
     string Head = "Head",
            Neck = "Neck",
@@ -45,6 +51,8 @@ public class InjuryUIHandler : MonoBehaviour
     {
         
         bodyPartScript = GetComponent<BodyPart>();
+
+        breakSeverity = 1;
 
         header = this.transform.GetChild(0).gameObject;
         condition = this.transform.GetChild(1).gameObject;
@@ -67,9 +75,10 @@ public class InjuryUIHandler : MonoBehaviour
         //// isLungcollapsed
 
 
-        for (int i = 0; i < NUM_BP; i++)
-        {
-            BodyParts selectedPart = BodyParts.NULL;
+        //for (int i = 0; i < NUM_BP; i++)
+        //{
+
+
             //The above will eventually be replaced:
             //"selectedPart" will be the type of bodypart returned by a raycastHit
             //BodyParts selectedPart = RaycastHit;
@@ -107,6 +116,16 @@ public class InjuryUIHandler : MonoBehaviour
                         uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetArray(selectedPart)[breakSeverity];
                     break;
             }
-        }
+        //}
+    }
+
+    public void SetSelectedPart(BodyParts selectedPart)
+    {
+        this.selectedPart = selectedPart;
+    }
+
+    public void SetBreakSeverity(int breakSeverity)
+    {
+        this.breakSeverity = breakSeverity;
     }
 }

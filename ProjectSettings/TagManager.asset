@@ -6,6 +6,18 @@ TagManager:
   tags:
   - victim
   - BasicPeeps
+  - Button
+  - BodPartsUI
+  - Head
+  - Torso
+  - LeftArm
+  - RightArm
+  - LeftLeg
+  - RightLeg
+  - LeftHand
+  - RightHand
+  - LeftFoot
+  - RightFoot
   layers:
   - Default
   - TransparentFX
