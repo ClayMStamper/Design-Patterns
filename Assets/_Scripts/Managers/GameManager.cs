@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/*
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,9 +18,9 @@ public class GameManager : MonoBehaviour
     public Sprite greenCheck,
                   redX;
 
-    Victim victimScript;
+    Victim victimScript; // variable that references the victim script 
 
-    public Sprite[] Head,
+    public Sprite[] Head, // Arrays that hold the X-Ray Sprites for the Injury UI.
                     Neck,
                     Torso,
                     L_Arm,
@@ -33,7 +42,7 @@ public class GameManager : MonoBehaviour
 
         victims = GameObject.FindGameObjectsWithTag("victim");
 
-        GetSprites();
+        GetSprites(); 
 		
 	}
 	
@@ -90,6 +99,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /* Function: CheckTagResults()
+     * Type: public Sprite[] GetArray
+     * Receives: BodyParts bp
+     * Returns: A body part or null
+     * 
+     * Objective - Determines the body part sprite array that needs to be returned and shown on the UI.
+     */
 
     public Sprite[] GetArray(BodyParts bp)
     {
@@ -141,6 +157,14 @@ public class GameManager : MonoBehaviour
                 return null;
         }
     }
+
+    /* Function: GetSprites()
+     * Type: public void
+     * Receives: N/A
+     * Returns: N/A
+     * 
+     * Objective - Fills arrays with the necessary sprites for each body part.
+     */
 
     public void GetSprites()
     {
