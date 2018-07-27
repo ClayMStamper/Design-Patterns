@@ -395,18 +395,18 @@ ModelImporter:
     400386: Henley Longsleeve
     400388: Jeans.001
     400390: Sneakers
-    2100000: Untitled.038
-    2100002: Untitled.037
-    2100004: Untitled.036
-    2100006: Untitled.034
-    2100008: Untitled.035
-    2100010: Untitled.032
-    2100012: Untitled.033
-    2100014: Untitled.031
-    2100016: Untitled.026
-    2100018: Untitled.027
-    2100020: Untitled.028
-    2100022: Untitled.029
+    2100000: Untitled.051
+    2100002: Untitled.050
+    2100004: Untitled.049
+    2100006: Untitled.047
+    2100008: Untitled.048
+    2100010: Untitled.045
+    2100012: Untitled.046
+    2100014: Untitled.044
+    2100016: Untitled.039
+    2100018: Untitled.040
+    2100020: Untitled.041
+    2100022: Untitled.042
     4300000: Sneakers
     4300002: Jeans.001
     4300004: Henley Longsleeve
@@ -414,8 +414,8 @@ ModelImporter:
     4300008: CC_Base_Teeth.001
     4300010: CC_Base_Tongue.001
     4300012: CC_Base_Body.001
-    7400000: armature.001|breathing
-    7400002: armature.001|broken_ArmLeft
+    7400000: breathing
+    7400002: broken_ArmLeft
     7400004: armature.001|broken_legLeft
     7400006: armature.001|broken_legRight
     7400008: armature.001|broken_neck
@@ -424,15 +424,13 @@ ModelImporter:
     7400014: armature.001|laying_awake
     7400016: armature.001|laying_struggle
     7400018: armature.001|laying_unconcious
-    7400020: armature.001|NONE
-    7400022: armature.001|NONE.001
-    7400024: armature.001|PoseLib
-    7400026: armature.001|standing
-    7400028: armature.001|standing_RWristInjury
-    7400030: armature.001|walk
-    7400032: Sneakers|NONE
-    7400034: Sneakers|NONE.001
-    7400036: Sneakers|walk
+    7400020: armature.001|laying_unconcious.001
+    7400022: armature.001|NONE
+    7400024: armature.001|NONE.001
+    7400026: armature.001|PoseLib
+    7400028: armature.001|standing
+    7400030: armature.001|standing_RWristInjury
+    7400032: armature.001|walk
     9500000: //RootNode
     13700000: CC_Base_Body.001
     13700002: CC_Base_Eye.001
@@ -470,7 +468,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: armature.001|breathing
+      name: breathing
       takeName: armature.001|breathing
       firstFrame: 0
       lastFrame: 80
@@ -498,7 +496,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|broken_ArmLeft
+      name: broken_ArmLeft
       takeName: armature.001|broken_ArmLeft
       firstFrame: 0
       lastFrame: 1
@@ -760,7 +758,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

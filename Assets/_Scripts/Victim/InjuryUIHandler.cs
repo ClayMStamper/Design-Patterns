@@ -9,6 +9,8 @@
  * ------------------------
  * This class is intended to recieve data contained in the ResourcesManager and use it to assign sprites and text to the ui containing the bone break,
  * concussion and lung status. 
+ * 
+ * NEEDS TO BE REFACTORED - Hierarchy of text on canvases and sprites
  */
 
 using System.Collections;
@@ -18,7 +20,7 @@ using UnityEngine.UI;
 
 public class InjuryUIHandler : MonoBehaviour 
 {
-    enum BreakSeverity {NOTBROKEN, BREAKONE, BREAKTWO, BREAKTHREE, SPECIALCASE };
+    enum BreakSeverity {NOTBROKEN, BREAKONE, BREAKTWO, BREAKTHREE, SPECIALCASE }; 
 
     int breakSeverity;
 
@@ -45,7 +47,7 @@ public class InjuryUIHandler : MonoBehaviour
                   break2 = "2 / 3",
                   break3 = "3 / 3";
 
-    string Head = "Head", 
+    string Head = "Head", // unecessary string? refactor 
            Neck = "Neck",
            Torso = "Torso",
            Arm = "Arm",
@@ -94,9 +96,9 @@ public class InjuryUIHandler : MonoBehaviour
         else // Otherwise it declares the Lungs as not collapsed when it is set equal to "false"
             condition.transform.GetChild(0).GetComponent<Text>().text = "Lung is not collapsed";
 
-        if (isBurned == true)
+        if (isBurned == true) // Declares that the Victim is burned on the selected body part if it is set equal to "true"
             condition.transform.GetChild(0).GetComponent<Text>().text = "Victim is burned";
-        else
+        else // Otherwise it declares the body part as not burned if the selected part is set equal to "false"
             condition.transform.GetChild(0).GetComponent<Text>().text = "Victim is not burned";
 
         //for (int i = 0; i < NUM_BP; i++) // probably not necessary
@@ -106,7 +108,7 @@ public class InjuryUIHandler : MonoBehaviour
             //BodyParts selectedPart = RaycastHit;
 
 
-            switch (breakSeverity) // Assigns the specific Text and Sprites recieved from the victim's status 
+            switch (breakSeverity) // Assigns the specific Text and Sprites recieved from the victim's status ** CHANGE HIERARCHY **
             {
                 case 1:
                         isBroken = true; 

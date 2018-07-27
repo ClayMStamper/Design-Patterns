@@ -116,10 +116,18 @@ public class Tagger : MonoBehaviour
                 }
             }
         }
-
-
         
     }
+
+    /* Function: OnTriggerEnter
+     * Type: void
+     * Recieves: Collider other
+     * returns: N/A
+     *
+     * Objective - To determine which UI canvas is active by interacting with the collider on a body part
+     * 
+     * ADD: Timed delay so selecting part connected to the bone is smoother
+     */
 
     void OnTriggerEnter(Collider other)
     {
@@ -153,6 +161,7 @@ public class Tagger : MonoBehaviour
         }
     }
 
+        //refactor
         else if(other.CompareTag("Head") || other.CompareTag("Torso") || other.CompareTag("RightArm") || other.CompareTag("LeftArm") || other.CompareTag("RightHand") ||
                 other.CompareTag("LeftHand") || other.CompareTag("RightLeg") || other.CompareTag("LeftLeg") || other.CompareTag("RightFoot") || other.CompareTag("LeftFoot"))
         {
@@ -164,7 +173,7 @@ public class Tagger : MonoBehaviour
             else
                 other.transform.GetChild(0).gameObject.SetActive(false);
                 
-                switch(other.tag)
+                switch(other.tag) // Determines the body part selected by player
                 {
                     case "Head": //Head
                         other.transform.GetChild(0).GetComponent<InjuryUIHandler>().SetSelectedPart(BodyParts.Head);
