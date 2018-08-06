@@ -3,7 +3,9 @@ guid: 20c64f46410976747aaa0e345f08952a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - greenCheck: {fileID: 21300000, guid: 77753e7f4e295c448959da2b07ab4eaf, type: 3}
+  - redX: {fileID: 21300000, guid: 98c5a27b3cecd3c4c91ef8aea54fa1d0, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

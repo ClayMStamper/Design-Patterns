@@ -140,13 +140,13 @@ public class Tagger : MonoBehaviour
             lineRenderer.material.color = tagColor;
             Debug.Log(other.name + "-Touched");
 
-                if (other.GetComponent<Renderer>().material.color == Color.red)
+                if (other.GetComponent<Renderer>().material.color == Color.red || other.transform.name == "Red")
                     playerTagColor = ConditionTag.Red;
                 else if (other.GetComponent<Renderer>().material.color == Color.yellow || other.transform.name == "Yellow") 
                     playerTagColor = ConditionTag.Yellow;
-                else if (other.GetComponent<Renderer>().material.color == Color.green)
+                else if (other.GetComponent<Renderer>().material.color == Color.green || other.transform.name == "Green")
                     playerTagColor = ConditionTag.Green;
-                else if (other.GetComponent<Renderer>().material.color == Color.black)
+                else if (other.GetComponent<Renderer>().material.color == Color.black || other.transform.name == "Black")
                     playerTagColor = ConditionTag.Black;
                 else
                     playerTagColor = ConditionTag.Untagged;
@@ -165,8 +165,8 @@ public class Tagger : MonoBehaviour
         else if(other.CompareTag("Head") || other.CompareTag("Torso") || other.CompareTag("RightArm") || other.CompareTag("LeftArm") || other.CompareTag("RightHand") ||
                 other.CompareTag("LeftHand") || other.CompareTag("RightLeg") || other.CompareTag("LeftLeg") || other.CompareTag("RightFoot") || other.CompareTag("LeftFoot"))
         {
-            Debug.Log("This is the Collider that you hit: " + other.name);
-            Debug.Log("This is the child(0)" + other.transform.GetChild(0).name);
+           // Debug.Log("This is the Collider that you hit: " + other.name);
+           // Debug.Log("This is the child(0)" + other.transform.GetChild(0).name);
 
             if (!other.transform.GetChild(0).gameObject.activeSelf)
                 other.transform.GetChild(0).gameObject.SetActive(true);

@@ -183,11 +183,11 @@ public class Victim : MonoBehaviour
         if (Mathf.Floor(Time.deltaTime) % 19 == 0)
         {
         // Update values, then set anim flags to match values
-        CalcResperationRate();
-            /*
+            CalcResperationRate();
+            
             CalcCanStand();
             CalcIsConscious();
-            */
+            
             SetVictimBreathingRate(respRate);
             SetVictimCanStand(canStand);
             SetVictimIsConscious(isConscious);

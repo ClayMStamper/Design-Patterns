@@ -30,7 +30,7 @@ public class InjuryUIHandler : MonoBehaviour
 
     //public const int NUM_BP = 10; //probably not necessary
 
-    public GameManager UIManager;   // change "GameManager" to ResourceBank
+    public GameManager UIManager;
 
     public GameObject bone,         // The bone that the UI is attached to 
                       uiParent,     // The canvas containing this script
@@ -61,9 +61,9 @@ public class InjuryUIHandler : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-        
-        bodyPartScript = GetComponent<BodyPart>(); // get reference to the BodyPart script
 
+
+        //bodyPartScript = GetComponent<BodyPart>(); // get reference to the BodyPart script
         breakSeverity = 1; // temporary hardcoding
 
         Header = this.transform.GetChild(0).gameObject;
@@ -114,31 +114,31 @@ public class InjuryUIHandler : MonoBehaviour
                         isBroken = true; 
                         isConcussed = true;
                         condition.transform.GetChild(0).GetComponent<Text>().text = System.Environment.NewLine + "Break Severity: " + break1; // Assigns the text "Break Severity: 1 / 3"
-                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
+                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetComponent<ResourceManager>().GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
                     break;
                 case 2: 
                         isBroken = true;
                         isConcussed = true;
                         condition.transform.GetChild(0).GetComponent<Text>().text = System.Environment.NewLine + "Break Severity: " + break2; // Assigns the text "Break Severity: 2 / 3"
-                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
+                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetComponent<ResourceManager>().GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
                     break;
                 case 3:
                         isBroken = true;
                         isConcussed = true;
                         condition.transform.GetChild(0).GetComponent<Text>().text = System.Environment.NewLine + "Break Severity: " + break3; // Assigns the text "Break Severity: 3 / 3"
-                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
+                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetComponent<ResourceManager>().GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
                     break;
                 case 4:
                         isBroken = false;
                         isConcussed = true;
                         condition.transform.GetChild(0).GetComponent<Text>().text = System.Environment.NewLine + "Break Severity: " + notBroken; // Assigns the text "Break Severity: 0 / 3"
-                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
+                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetComponent<ResourceManager>().GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
                     break;
                 default:
                         isBroken = false;
                         isConcussed = false;
                         condition.transform.GetChild(0).GetComponent<Text>().text = System.Environment.NewLine + "Break Severity: " + notBroken; // Assigns the text "Break Severity: 0 / 3"
-                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
+                        uiParent.transform.GetChild(0).GetComponent<Image>().sprite = UIManager.GetComponent<ResourceManager>().GetArray(selectedPart)[breakSeverity]; // Assigns the X-Ray Sprite based on the breakSeverity and selectedPart
                     break;
             }
         //}

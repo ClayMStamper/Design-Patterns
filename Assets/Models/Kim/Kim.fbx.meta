@@ -433,14 +433,15 @@ ModelImporter:
     7400012: confused
     7400014: laying_awake
     7400016: laying_struggle
-    7400018: llaying_unconcious
+    7400018: laying_unconcious
     7400020: armature.002|laying_unconcious.001
     7400022: armature.002|NONE
     7400024: armature.002|NONE.001
     7400026: armature.002|PoseLib
-    7400028: standing
-    7400030: standing_RWristInjury
-    7400032: walk
+    7400028: armature.002|PoseLib.001
+    7400030: standing
+    7400032: standing_RWristInjury
+    7400034: walk
     9500000: //RootNode
     13700000: CC_Base_Body.002
     13700002: CC_Base_Eye.002
@@ -490,7 +491,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -658,7 +659,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -686,7 +687,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -714,7 +715,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -732,7 +733,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: llaying_unconcious
+      name: laying_unconcious
       takeName: armature.002|laying_unconcious
       firstFrame: 0
       lastFrame: 1
@@ -742,7 +743,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -770,7 +771,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -798,7 +799,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -826,7 +827,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -839,8 +840,404 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: armature.002
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_CalfTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_CalfTwist01/CC_Base_L_CalfTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_CalfTwist01/CC_Base_L_CalfTwist02/CC_Base_L_CalfTwist02_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe00
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe00/CC_Base_L_Toe00Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe00/CC_Base_L_Toe00Nub/CC_Base_L_Toe00Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe10
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe10/CC_Base_L_Toe10Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe10/CC_Base_L_Toe10Nub/CC_Base_L_Toe10Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe20
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe20/CC_Base_L_Toe20Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe20/CC_Base_L_Toe20Nub/CC_Base_L_Toe20Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe30
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe30/CC_Base_L_Toe30Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe30/CC_Base_L_Toe30Nub/CC_Base_L_Toe30Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe40
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe40/CC_Base_L_Toe40Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBase/CC_Base_L_Toe40/CC_Base_L_Toe40Nub/CC_Base_L_Toe40Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBaseShareBone
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Foot/CC_Base_L_ToeBaseShareBone/CC_Base_L_ToeBaseShareBone_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Knee
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Calf/CC_Base_L_Knee/CC_Base_L_Knee_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Hip0
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Hip0/CC_Base_L_Hip0Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_Hip0/CC_Base_L_Hip0Nub/CC_Base_L_Hip0Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_ThighTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_ThighTwist01/CC_Base_L_ThighTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_L_Thigh/CC_Base_L_ThighTwist01/CC_Base_L_ThighTwist02/CC_Base_L_ThighTwist02_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_CalfTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_CalfTwist01/CC_Base_R_CalfTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_CalfTwist01/CC_Base_R_CalfTwist02/CC_Base_R_CalfTwist02_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe00
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe00/CC_Base_R_Toe00Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe00/CC_Base_R_Toe00Nub/CC_Base_R_Toe00Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe10
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe10/CC_Base_R_Toe10Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe10/CC_Base_R_Toe10Nub/CC_Base_R_Toe10Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe20
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe20/CC_Base_R_Toe20Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe20/CC_Base_R_Toe20Nub/CC_Base_R_Toe20Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe30
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe30/CC_Base_R_Toe30Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe30/CC_Base_R_Toe30Nub/CC_Base_R_Toe30Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe40
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe40/CC_Base_R_Toe40Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBase/CC_Base_R_Toe40/CC_Base_R_Toe40Nub/CC_Base_R_Toe40Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBaseShareBone
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Foot/CC_Base_R_ToeBaseShareBone/CC_Base_R_ToeBaseShareBone_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Knee
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Calf/CC_Base_R_Knee/CC_Base_R_Knee_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Hip0
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Hip0/CC_Base_R_Hip0Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_Hip0/CC_Base_R_Hip0Nub/CC_Base_R_Hip0Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_ThighTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_ThighTwist01/CC_Base_R_ThighTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Pelvis/CC_Base_R_Thigh/CC_Base_R_ThighTwist01/CC_Base_R_ThighTwist02/CC_Base_R_ThighTwist02_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_L_Abdominal
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_L_Abdominal/CC_Base_L_AbdominalNub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_L_Abdominal/CC_Base_L_AbdominalNub/CC_Base_L_AbdominalNub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_R_Abdominal
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_R_Abdominal/CC_Base_R_AbdominalNub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_R_Abdominal/CC_Base_R_AbdominalNub/CC_Base_R_AbdominalNub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Elbow
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Elbow/CC_Base_L_Elbow_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_ForearmTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_ForearmTwist01/CC_Base_L_ForearmTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_ForearmTwist01/CC_Base_L_ForearmTwist02/CC_Base_L_ForearmTwist02_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger00
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger00/CC_Base_L_Finger01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger00/CC_Base_L_Finger01/CC_Base_L_Finger02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger00/CC_Base_L_Finger01/CC_Base_L_Finger02/CC_Base_L_Finger0Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger00/CC_Base_L_Finger01/CC_Base_L_Finger02/CC_Base_L_Finger0Nub/CC_Base_L_Finger0Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger10
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger10/CC_Base_L_Finger11
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger10/CC_Base_L_Finger11/CC_Base_L_Finger12
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger10/CC_Base_L_Finger11/CC_Base_L_Finger12/CC_Base_L_Finger1Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger10/CC_Base_L_Finger11/CC_Base_L_Finger12/CC_Base_L_Finger1Nub/CC_Base_L_Finger1Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger20
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger20/CC_Base_L_Finger21
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger20/CC_Base_L_Finger21/CC_Base_L_Finger22
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger20/CC_Base_L_Finger21/CC_Base_L_Finger22/CC_Base_L_Finger2Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger20/CC_Base_L_Finger21/CC_Base_L_Finger22/CC_Base_L_Finger2Nub/CC_Base_L_Finger2Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger30
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger30/CC_Base_L_Finger31
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger30/CC_Base_L_Finger31/CC_Base_L_Finger32
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger30/CC_Base_L_Finger31/CC_Base_L_Finger32/CC_Base_L_Finger3Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger30/CC_Base_L_Finger31/CC_Base_L_Finger32/CC_Base_L_Finger3Nub/CC_Base_L_Finger3Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger40
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger40/CC_Base_L_Finger41
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger40/CC_Base_L_Finger41/CC_Base_L_Finger42
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger40/CC_Base_L_Finger41/CC_Base_L_Finger42/CC_Base_L_Finger4Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_Forearm/CC_Base_L_Hand/CC_Base_L_Finger40/CC_Base_L_Finger41/CC_Base_L_Finger42/CC_Base_L_Finger4Nub/CC_Base_L_Finger4Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_UpperarmTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_UpperarmTwist01/CC_Base_L_UpperarmTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Clavicle/CC_Base_L_Upperarm/CC_Base_L_UpperarmTwist01/CC_Base_L_UpperarmTwist02/CC_Base_L_UpperarmTwist02_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Ribs
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Ribs/CC_Base_L_RibsNub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Ribs/CC_Base_L_RibsNub/CC_Base_L_RibsNub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Ribs/CC_Base_L_RibsTwist
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Ribs/CC_Base_L_RibsTwist/CC_Base_L_Breast
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Ribs/CC_Base_L_RibsTwist/CC_Base_L_Breast/CC_Base_L_BreastNub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_L_Ribs/CC_Base_L_RibsTwist/CC_Base_L_Breast/CC_Base_L_BreastNub/CC_Base_L_BreastNub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_JawRoot
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_JawRoot/CC_Base_Teeth02
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_JawRoot/CC_Base_Teeth02/CC_Base_Teeth02_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_JawRoot/CC_Base_Tongue01
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_JawRoot/CC_Base_Tongue01/CC_Base_Tongue02
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_JawRoot/CC_Base_Tongue01/CC_Base_Tongue02/CC_Base_Tongue03
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_JawRoot/CC_Base_Tongue01/CC_Base_Tongue02/CC_Base_Tongue03/CC_Base_Tongue03Nub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_JawRoot/CC_Base_Tongue01/CC_Base_Tongue02/CC_Base_Tongue03/CC_Base_Tongue03Nub/CC_Base_Tongue03Nub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_L_EyeRoot
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_L_EyeRoot/CC_Base_L_Eye
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_L_EyeRoot/CC_Base_L_Eye/CC_Base_L_Eye_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_R_EyeRoot
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_R_EyeRoot/CC_Base_R_Eye
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_R_EyeRoot/CC_Base_R_Eye/CC_Base_R_Eye_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_UpperJaw
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_UpperJaw/CC_Base_Teeth01
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_FacialBone/CC_Base_UpperJaw/CC_Base_Teeth01/CC_Base_Teeth01_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_HeadNub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_NeckTwist01/CC_Base_NeckTwist02/CC_Base_Head/CC_Base_HeadNub/CC_Base_HeadNub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Elbow
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Elbow/CC_Base_R_Elbow_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_ForearmTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_ForearmTwist01/CC_Base_R_ForearmTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_ForearmTwist01/CC_Base_R_ForearmTwist02/CC_Base_R_ForearmTwist02_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger00
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger00/CC_Base_R_Finger01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger00/CC_Base_R_Finger01/CC_Base_R_Finger02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger00/CC_Base_R_Finger01/CC_Base_R_Finger02/CC_Base_R_Finger0Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger00/CC_Base_R_Finger01/CC_Base_R_Finger02/CC_Base_R_Finger0Nub/CC_Base_R_Finger0Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger10
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger10/CC_Base_R_Finger11
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger10/CC_Base_R_Finger11/CC_Base_R_Finger12
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger10/CC_Base_R_Finger11/CC_Base_R_Finger12/CC_Base_R_Finger1Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger10/CC_Base_R_Finger11/CC_Base_R_Finger12/CC_Base_R_Finger1Nub/CC_Base_R_Finger1Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger20
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger20/CC_Base_R_Finger21
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger20/CC_Base_R_Finger21/CC_Base_R_Finger22
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger20/CC_Base_R_Finger21/CC_Base_R_Finger22/CC_Base_R_Finger2Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger20/CC_Base_R_Finger21/CC_Base_R_Finger22/CC_Base_R_Finger2Nub/CC_Base_R_Finger2Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger30
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger30/CC_Base_R_Finger31
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger30/CC_Base_R_Finger31/CC_Base_R_Finger32
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger30/CC_Base_R_Finger31/CC_Base_R_Finger32/CC_Base_R_Finger3Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger30/CC_Base_R_Finger31/CC_Base_R_Finger32/CC_Base_R_Finger3Nub/CC_Base_R_Finger3Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger40
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger40/CC_Base_R_Finger41
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger40/CC_Base_R_Finger41/CC_Base_R_Finger42
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger40/CC_Base_R_Finger41/CC_Base_R_Finger42/CC_Base_R_Finger4Nub
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_Forearm/CC_Base_R_Hand/CC_Base_R_Finger40/CC_Base_R_Finger41/CC_Base_R_Finger42/CC_Base_R_Finger4Nub/CC_Base_R_Finger4Nub_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_UpperarmTwist01
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_UpperarmTwist01/CC_Base_R_UpperarmTwist02
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Clavicle/CC_Base_R_Upperarm/CC_Base_R_UpperarmTwist01/CC_Base_R_UpperarmTwist02/CC_Base_R_UpperarmTwist02_end
+        weight: 1
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Ribs
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Ribs/CC_Base_R_RibsNub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Ribs/CC_Base_R_RibsNub/CC_Base_R_RibsNub_end
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Ribs/CC_Base_R_RibsTwist
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Ribs/CC_Base_R_RibsTwist/CC_Base_R_Breast
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Ribs/CC_Base_R_RibsTwist/CC_Base_R_Breast/CC_Base_R_BreastNub
+        weight: 0
+      - path: armature.002/CC_Base_BoneRoot/CC_Base_Hip/CC_Base_Waist/CC_Base_Spine01/CC_Base_Spine02/CC_Base_R_Ribs/CC_Base_R_RibsTwist/CC_Base_R_Breast/CC_Base_R_BreastNub/CC_Base_R_BreastNub_end
+        weight: 0
+      - path: CC_Base_Body.002
+        weight: 1
+      - path: CC_Base_Eye.002
+        weight: 1
+      - path: CC_Base_Teeth.002
+        weight: 1
+      - path: CC_Base_Tongue.002
+        weight: 1
+      - path: Low-heeled sandals
+        weight: 1
+      - path: Mini Skirt
+        weight: 1
+      - path: RL_G6_Hair
+        weight: 1
+      - path: Shirt
+        weight: 1
+      - path: Underwear Bottoms
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     isReadable: 1

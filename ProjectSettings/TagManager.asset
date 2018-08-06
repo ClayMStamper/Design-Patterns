@@ -18,6 +18,7 @@ TagManager:
   - RightHand
   - LeftFoot
   - RightFoot
+  - Drawer
   layers:
   - Default
   - TransparentFX

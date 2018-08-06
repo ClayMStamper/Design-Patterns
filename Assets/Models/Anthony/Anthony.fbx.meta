@@ -416,21 +416,21 @@ ModelImporter:
     4300012: CC_Base_Body.001
     7400000: breathing
     7400002: broken_ArmLeft
-    7400004: armature.001|broken_legLeft
-    7400006: armature.001|broken_legRight
-    7400008: armature.001|broken_neck
-    7400010: armature.001|brokenArmRight
-    7400012: armature.001|confused
-    7400014: armature.001|laying_awake
-    7400016: armature.001|laying_struggle
-    7400018: armature.001|laying_unconcious
+    7400004: broken_legLeft
+    7400006: broken_legRight
+    7400008: broken_neck
+    7400010: brokenArmRight
+    7400012: confused
+    7400014: laying_awake
+    7400016: laying_struggle
+    7400018: laying_unconcious
     7400020: armature.001|laying_unconcious.001
     7400022: armature.001|NONE
     7400024: armature.001|NONE.001
     7400026: armature.001|PoseLib
-    7400028: armature.001|standing
-    7400030: armature.001|standing_RWristInjury
-    7400032: armature.001|walk
+    7400028: standing
+    7400030: standing_RWristInjury
+    7400032: walk
     9500000: //RootNode
     13700000: CC_Base_Body.001
     13700002: CC_Base_Eye.001
@@ -478,7 +478,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -524,7 +524,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|broken_legLeft
+      name: broken_legLeft
       takeName: armature.001|broken_legLeft
       firstFrame: 0
       lastFrame: 1
@@ -552,7 +552,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|broken_legRight
+      name: broken_legRight
       takeName: armature.001|broken_legRight
       firstFrame: 0
       lastFrame: 1
@@ -580,7 +580,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|broken_neck
+      name: broken_neck
       takeName: armature.001|broken_neck
       firstFrame: 0
       lastFrame: 1
@@ -608,7 +608,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|brokenArmRight
+      name: brokenArmRight
       takeName: armature.001|brokenArmRight
       firstFrame: 0
       lastFrame: 1
@@ -636,7 +636,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|confused
+      name: confused
       takeName: armature.001|confused
       firstFrame: 0
       lastFrame: 180
@@ -646,7 +646,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -664,7 +664,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|laying_awake
+      name: laying_awake
       takeName: armature.001|laying_awake
       firstFrame: 0
       lastFrame: 280
@@ -674,7 +674,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -692,7 +692,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|laying_struggle
+      name: laying_struggle
       takeName: armature.001|laying_struggle
       firstFrame: 0
       lastFrame: 280
@@ -702,7 +702,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -720,7 +720,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|laying_unconcious
+      name: laying_unconcious
       takeName: armature.001|laying_unconcious
       firstFrame: 0
       lastFrame: 1
@@ -748,7 +748,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|standing
+      name: standing
       takeName: armature.001|standing
       firstFrame: 0
       lastFrame: 281
@@ -776,7 +776,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|standing_RWristInjury
+      name: standing_RWristInjury
       takeName: armature.001|standing_RWristInjury
       firstFrame: 0
       lastFrame: 260
@@ -786,7 +786,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -804,7 +804,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature.001|walk
+      name: walk
       takeName: armature.001|walk
       firstFrame: 0
       lastFrame: 40
@@ -814,7 +814,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

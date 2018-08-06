@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: mat_boots
   m_Shader: {fileID: 4800000, guid: fd8493f2cb9b1ac44bfdb123344a404d, type: 3}
-  m_ShaderKeywords: BOOLEAN_A79D6BCC_ON BOOLEAN_B3CF2297_ON BOOLEAN_E8F803C4_ON
+  m_ShaderKeywords: BOOLEAN_A79D6BCC_ON BOOLEAN_E8F803C4_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -124,7 +124,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_A79D6BCC: 1
-    - Boolean_B3CF2297: 1
+    - Boolean_B3CF2297: 0
     - Boolean_E8F803C4: 1
     - Vector1_3F6C7BF3: -1
     - Vector1_54EF8017: 0.7

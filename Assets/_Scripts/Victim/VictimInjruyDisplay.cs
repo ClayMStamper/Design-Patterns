@@ -24,7 +24,16 @@ public class VictimInjruyDisplay : MonoBehaviour {
 	void Start ()
     {
         victim = GetComponent<Victim>();
-        body = transform.Find("CC_Base_Body").gameObject;
+
+        //Temp Init b/c the ""CC_Base_Body" is different for each model at the current moment.
+        if (transform.Find("CC_Base_Body"))
+            body = transform.Find("CC_Base_Body").gameObject;
+        else if (transform.Find("CC_Base_Body.001"))
+            body = transform.Find("CC_Base_Body.001").gameObject;
+        else
+            body = transform.Find("CC_Base_Body.002").gameObject;
+        //End of Temp Inits
+
         renderer = body.GetComponent<Renderer>();
         bodyMaterial = renderer.materials[0];
         headMaterial = renderer.materials[1];

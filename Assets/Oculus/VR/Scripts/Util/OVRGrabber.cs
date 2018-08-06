@@ -257,8 +257,8 @@ public class OVRGrabber : MonoBehaviour
             m_lastPos = transform.position;
             m_lastRot = transform.rotation;
 
-            // Set up offsets for grabbed object desired position relative to hand.
-            if(m_grabbedObj.snapPosition)
+            // Set up offsets for grabbed object desired position relative to hand. **CHANGE THIS BACK TO "IF" when done.
+            if (m_grabbedObj.snapPosition)
             {
                 m_grabbedObjectPosOff = m_gripTransform.localPosition;
                 if(m_grabbedObj.snapOffset)
@@ -292,8 +292,19 @@ public class OVRGrabber : MonoBehaviour
             // Note: force teleport on grab, to avoid high-speed travel to dest which hits a lot of other objects at high
             // speed and sends them flying. The grabbed object may still teleport inside of other objects, but fixing that
             // is beyond the scope of this demo.
-            MoveGrabbedObject(m_lastPos, m_lastRot, true);
-            if(m_parentHeldObject)
+
+            // Porter's Fuckery Begins
+            if (grabbedObject.CompareTag("Drawer"))
+            {
+                MoveGrabbedObject(m_lastPos, Quaternion.Euler(0.0f, 0.0f, 0.0f), false);
+                //Debug.Log("You grabed the damn drawer!");
+            }
+            //Porter's Fuckery Ends
+            
+           else //Delete this if you want to get rid of ALL my fuckery.
+                MoveGrabbedObject(m_lastPos, m_lastRot, true);
+
+            if (m_parentHeldObject)
             {
                 m_grabbedObj.transform.parent = transform;
             }
@@ -314,12 +325,15 @@ public class OVRGrabber : MonoBehaviour
         if (forceTeleport)
         {
             grabbedRigidbody.transform.position = grabbablePosition;
-            grabbedRigidbody.transform.rotation = grabbableRotation;
+
+            if (!grabbedRigidbody.CompareTag("Drawer"))
+                grabbedRigidbody.transform.rotation = grabbableRotation;
         }
         else
         {
             grabbedRigidbody.MovePosition(grabbablePosition);
-            grabbedRigidbody.MoveRotation(grabbableRotation);
+            if (!grabbedRigidbody.CompareTag("Drawer"))
+                grabbedRigidbody.MoveRotation(grabbableRotation);
         }
     }
 
