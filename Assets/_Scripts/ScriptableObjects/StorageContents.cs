@@ -2,49 +2,64 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StorageContents : MonoBehaviour {
+public class StorageContents : MonoBehaviour
+{
+    public Transform spawnerLocation; //Will hold the location at which the initial transform values of the items are based;
+    public Vector3 offset; //Offset from the Spawner location and other items in the Drawer.
 
-    private List<GameObject> inventory;
-    private List<GameObject> instances;
-    [SerializeField]
-    public string drawerPreset = null;
-    [SerializeField]
-    public Transform origin = null;
-    private float offsetSize = 0.25f;
-    private float height = 20;
+    public List<GameObject> drawerContents; //A List to hold the GameObjects "stored" in the drawer
+    public SODrawerContents drawerScriptableObject; //Holds the SO this drawer is based on -- determines which items are "stored" in the drawer.
 
-    public GameObject prefab;
-
-    public SOSupplies item;
+    public bool openedDrawer = false;
+    public bool closedDrawer = false;
 
 	// Use this for initialization
 	void Start ()
     {
 
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    private void FixedUpdate()
     {
-		
-	}
-
-    void spawnContents(SOSupplies itemData)
-    {
-
-        for (int i = 0; i < itemData.quantity; i++)
-         {
-            GameObject obj = GameObject.Instantiate(prefab, origin);
-            obj.name = itemData.name;
-
-            //return obj;
-            obj.transform.position = origin.position; //.Translate(Vector3.right * (i * offsetSize), Space.Self);
-            obj.transform.Translate(Vector3.right * (i * offsetSize), Space.Self);
-
-
-            // instances.Add(obj);
+        if (openedDrawer)
+        {
+            closedDrawer = false;
+            ContentsSpawner();
         }
+           
 
-       // }
+        if (closedDrawer)
+        {
+            openedDrawer = false;
+            ContentsDespawner();
+        }
+            
     }
+
+    private void ContentsSpawner()
+    {
+        if(drawerContents.Count == 0)
+        {
+            foreach (GameObject pref in drawerScriptableObject.drawerContents)
+            {
+                GameObject obj = Instantiate(pref);
+                obj.transform.SetPositionAndRotation(spawnerLocation.transform.position + offset, Quaternion.Euler(Vector3.zero));
+                drawerContents.Add(obj);
+                obj.SetActive(true);
+            }
+        }    
+    }
+
+    private void ContentsDespawner()
+    {
+        int counter = 0;
+
+        while (drawerContents.Count >= 1)
+        {
+            GameObject.Destroy(drawerContents[counter]);
+            drawerContents.Remove(drawerContents[counter]);
+        } 
+    }
+
 }
