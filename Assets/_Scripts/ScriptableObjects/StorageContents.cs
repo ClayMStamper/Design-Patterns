@@ -5,7 +5,7 @@ using UnityEngine;
 public class StorageContents : MonoBehaviour
 {
     public Transform spawnerLocation; //Will hold the location at which the initial transform values of the items are based;
-    public Vector3 offset; //Offset from the Spawner location and other items in the Drawer.
+    public Vector3 offset = Vector3.zero; //Offset from the Spawner location and other items in the Drawer.
 
     public List<GameObject> drawerContents; //A List to hold the GameObjects "stored" in the drawer
     public SODrawerContents drawerScriptableObject; //Holds the SO this drawer is based on -- determines which items are "stored" in the drawer.
@@ -42,11 +42,13 @@ public class StorageContents : MonoBehaviour
         if(drawerContents.Count == 0)
         {
             foreach (GameObject pref in drawerScriptableObject.drawerContents)
-            {
+            { 
                 GameObject obj = Instantiate(pref);
                 obj.transform.SetPositionAndRotation(spawnerLocation.transform.position + offset, Quaternion.Euler(Vector3.zero));
                 drawerContents.Add(obj);
                 obj.SetActive(true);
+
+                offset.y += 0.5f;
             }
         }    
     }
@@ -59,7 +61,9 @@ public class StorageContents : MonoBehaviour
         {
             GameObject.Destroy(drawerContents[counter]);
             drawerContents.Remove(drawerContents[counter]);
-        } 
+        }
+
+        offset = Vector3.zero;
     }
 
 }
