@@ -13,6 +13,9 @@ public class StorageContents : MonoBehaviour
     public bool openedDrawer = false;
     public bool closedDrawer = false;
 
+    public float itemSpacing = 0.35f; //How far apart are the items (horizontally) --  .3 seems to be a good default value for fitting ALL objects, 
+                                     //                                               refine to fit specific objects if desired.
+
 	// Use this for initialization
 	void Start ()
     {
@@ -39,16 +42,19 @@ public class StorageContents : MonoBehaviour
 
     private void ContentsSpawner()
     {
+        offset.x = (drawerScriptableObject.drawerContents.Length / 2) * -itemSpacing;
+        offset.y = 0.75f; //How far vertically above the spawnLocation are the objects -- 0.75f seems to be a decent value (Maybe 0.6f?)
+
         if(drawerContents.Count == 0)
         {
             foreach (GameObject pref in drawerScriptableObject.drawerContents)
-            { 
+            {
                 GameObject obj = Instantiate(pref);
-                obj.transform.SetPositionAndRotation(spawnerLocation.transform.position + offset, Quaternion.Euler(Vector3.zero));
+                obj.transform.SetPositionAndRotation(spawnerLocation.transform.position + offset, spawnerLocation.rotation);
                 drawerContents.Add(obj);
                 obj.SetActive(true);
 
-                offset.y += 0.5f;
+                offset.x += itemSpacing;
             }
         }    
     }

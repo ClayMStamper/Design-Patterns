@@ -12,9 +12,5 @@ MonoBehaviour:
   m_Name: Drawer1
   m_EditorClassIdentifier: 
   drawerContents:
-  - {fileID: 1967755608078674, guid: a0f3977f0c8364a4e8106b2e9aa0127d, type: 2}
-  - {fileID: 1967755608078674, guid: a0f3977f0c8364a4e8106b2e9aa0127d, type: 2}
-  - {fileID: 1967755608078674, guid: a0f3977f0c8364a4e8106b2e9aa0127d, type: 2}
-  - {fileID: 1368416929635328, guid: 6775f53ed34fd5749ac42eae0232ea3a, type: 2}
-  - {fileID: 1368416929635328, guid: 6775f53ed34fd5749ac42eae0232ea3a, type: 2}
-  - {fileID: 1368416929635328, guid: 6775f53ed34fd5749ac42eae0232ea3a, type: 2}
+  - {fileID: 1439587456942424, guid: 1b131dce60966cf4f985ecf71fefb1bb, type: 2}
+  - {fileID: 1771190621034068, guid: e37bee5a2b8ec254598b228a58c5f339, type: 2}
