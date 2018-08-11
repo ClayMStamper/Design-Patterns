@@ -8,18 +8,27 @@ public class DrawerBehaviorTrigger : MonoBehaviour
     {
         if (other.CompareTag("Drawer"))
         {
-            other.GetComponent<StorageContents>().closedDrawer = false;
-            other.GetComponent<StorageContents>().openedDrawer = true;
+            other.GetComponent<StorageContentsV2>().closedDrawer = false;
+            other.GetComponent<StorageContentsV2>().openedDrawer = true;
         }
             
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.CompareTag("Drawer"))
+        {
+            other.GetComponent<StorageContentsV2>().openedDrawer = false;
+            other.GetComponent<StorageContentsV2>().closedDrawer = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Drawer"))
         {
-            other.GetComponent<StorageContents>().openedDrawer = false;
-            other.GetComponent<StorageContents>().closedDrawer = true;
+            other.GetComponent<StorageContentsV2>().openedDrawer = false;
+            other.GetComponent<StorageContentsV2>().closedDrawer = true;
         }
     }
 

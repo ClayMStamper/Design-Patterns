@@ -19,6 +19,7 @@ TagManager:
   - LeftFoot
   - RightFoot
   - Drawer
+  - MedicalItem_Grabbable
   layers:
   - Default
   - TransparentFX

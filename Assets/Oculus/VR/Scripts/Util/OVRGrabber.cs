@@ -213,6 +213,7 @@ public class OVRGrabber : MonoBehaviour
 
     protected virtual void GrabBegin()
     {
+
         float closestMagSq = float.MaxValue;
 		OVRGrabbable closestGrabbable = null;
         Collider closestGrabbableCollider = null;
@@ -328,12 +329,16 @@ public class OVRGrabber : MonoBehaviour
 
             if (!grabbedRigidbody.CompareTag("Drawer"))
                 grabbedRigidbody.transform.rotation = grabbableRotation;
+            //if (grabbedRigidbody.CompareTag("MedicalItem_Grabbable"))
+            //    grabbedRigidbody.isKinematic = false;
         }
         else
         {
             grabbedRigidbody.MovePosition(grabbablePosition);
             if (!grabbedRigidbody.CompareTag("Drawer"))
                 grabbedRigidbody.MoveRotation(grabbableRotation);
+           // if (grabbedRigidbody.CompareTag("MedicalItem_Grabbable"))
+            //    grabbedRigidbody.isKinematic = false;
         }
     }
 
