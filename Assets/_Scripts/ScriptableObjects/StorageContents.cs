@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StorageContents : MonoBehaviour, ISpecialGrabbable
+public class StorageContents : MonoBehaviour
 {
     public List<GameObject> drawerContents; //A List to hold the GameObjects "stored" in the drawer
 
@@ -26,13 +26,6 @@ public class StorageContents : MonoBehaviour, ISpecialGrabbable
             //check children
             GetContentsRecursively(child);
         }
-
-    }
-
-    public void Interact()
-    {
-        Debug.Log("DRAWER INTERACTED WITH BECAUSE SPECIAL");
-        Debug.Break();
     }
 
 }
