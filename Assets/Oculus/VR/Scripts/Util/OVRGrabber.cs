@@ -294,6 +294,26 @@ public class OVRGrabber : MonoBehaviour
             // speed and sends them flying. The grabbed object may still teleport inside of other objects, but fixing that
             // is beyond the scope of this demo.
 
+            #region Clay's special grab instructions
+
+            //scripts attached to grabbed object
+            MonoBehaviour[] componentsList = grabbedObject.GetComponents<MonoBehaviour>();
+
+            //check if has special function. Invoke if so.
+            foreach (MonoBehaviour comp in componentsList)
+            {
+                if (comp is ISpecialGrabbable)
+                {
+                    Debug.Log(grabbedObject.name + "is special");
+                    grabbedObject.GetComponent<ISpecialGrabbable>().Interact();
+                } else
+                {
+                    Debug.Log(grabbedObject.name + "is NOT special"); ;
+                }
+            }
+
+            #endregion
+
             // Porter's Fuckery Begins
             if (grabbedObject.CompareTag("Drawer"))
             {

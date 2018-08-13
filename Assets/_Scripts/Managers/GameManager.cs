@@ -40,8 +40,8 @@ public class GameManager : MonoBehaviour
      * Receives: nothing
      * Returns: N/A
      * 
-     * Objective - This function will check for the necessary components for evaluation in each GameObject tagged 'victim',
-     *             if it is missing the component, this function will add it to the gameObject.
+     * Objective - checks for the necessary components for evaluation in each GameObject tagged 'victim'.
+     *             Ff missing the component - this will add it to the gameObject.
     */
 
     void CheckForTestingComponents()
