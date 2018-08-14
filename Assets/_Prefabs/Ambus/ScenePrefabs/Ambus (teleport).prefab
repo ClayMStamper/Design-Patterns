@@ -5626,7 +5626,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1276357229447722}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -4.5075364, y: 0.37707925, z: -0.07382722}
+  m_LocalPosition: {x: -4.508, y: 0.372, z: -0.079}
   m_LocalScale: {x: 1.379277, y: 1.394148, z: 1.3427202}
   m_Children: []
   m_Father: {fileID: 4629317139086418}
@@ -14524,4 +14524,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   marker: {fileID: 4955903755057400}
   fade: {fileID: 0}
-  teleportLocation: {fileID: 0}

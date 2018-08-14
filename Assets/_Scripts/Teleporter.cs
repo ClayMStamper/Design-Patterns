@@ -17,8 +17,6 @@ public class Teleporter : MonoBehaviour
     [SerializeField]
     OVRScreenFade fade;
 
-    public GameObject teleportLocation;
-
     //draw light blue wire sphere on teleport target in the editor
     private void OnDrawGizmos()
     {
