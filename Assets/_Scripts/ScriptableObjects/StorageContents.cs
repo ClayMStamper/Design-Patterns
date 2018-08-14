@@ -28,6 +28,7 @@ public class StorageContents : MonoBehaviour
         }
     }
 
+
 }
 
 //needs to be moved. Temporary spot for testing

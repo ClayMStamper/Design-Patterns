@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class ResourceManager: MonoBehaviour
 {
+
     public Sprite[] Head, // Arrays that hold the X-Ray Sprites for the Injury UI.
                 Neck,
                 Torso,
@@ -107,7 +109,5 @@ public class ResourceManager: MonoBehaviour
         L_Foot = Resources.LoadAll<Sprite>("XraySprites/EthanFoot/LeftFoot");
         R_Foot = Resources.LoadAll<Sprite>("XraySprites/EthanFoot/RightFoot");
     }
-
-
 
 }
