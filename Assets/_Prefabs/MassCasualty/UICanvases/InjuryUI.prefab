@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 114469198637951416}
   - component: {fileID: 114450670296182036}
   m_Layer: 0
-  m_Name: BrokenBoneUI
+  m_Name: InjuryUI
   m_TagString: BodPartsUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -43,8 +43,11 @@ public class VictimSpawnPoint : MonoBehaviour {
             if (bone.CompareTag("Head"))
             {
                 UIHead.transform.position = bone.transform.position + bone.transform.forward * 0.25f;
-                UIHead.SendMessage("LoadPreset", "default");
+            }
 
+            if (bone.CompareTag("Body"))
+            {
+                UIHead.transform.position = bone.transform.position + bone.transform.forward * 0.25f;
             }
         }
 
