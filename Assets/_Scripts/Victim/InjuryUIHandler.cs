@@ -70,6 +70,7 @@ public class InjuryUIHandler : MonoBehaviour
         condition = this.transform.GetChild(1).gameObject;
         uiParent = this.transform.GetChild(2).gameObject;
 	}
+
 	
 	/* Function: SetupUI()
      * Type: Void

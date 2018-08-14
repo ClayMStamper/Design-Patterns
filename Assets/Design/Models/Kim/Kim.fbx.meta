@@ -201,6 +201,54 @@ ModelImporter:
     100390: RL_G6_Hair
     100392: Shirt
     100394: Underwear Bottoms
+    100396: CC_Base_HeadNub_end_end
+    100398: CC_Base_L_AbdominalNub_end_end
+    100400: CC_Base_L_BreastNub_end_end
+    100402: CC_Base_L_CalfTwist02_end_end
+    100404: CC_Base_L_Elbow_end_end
+    100406: CC_Base_L_Eye_end_end
+    100408: CC_Base_L_Finger0Nub_end_end
+    100410: CC_Base_L_Finger1Nub_end_end
+    100412: CC_Base_L_Finger2Nub_end_end
+    100414: CC_Base_L_Finger3Nub_end_end
+    100416: CC_Base_L_Finger4Nub_end_end
+    100418: CC_Base_L_ForearmTwist02_end_end
+    100420: CC_Base_L_Hip0Nub_end_end
+    100422: CC_Base_L_Knee_end_end
+    100424: CC_Base_L_RibsNub_end_end
+    100426: CC_Base_L_ThighTwist02_end_end
+    100428: CC_Base_L_Toe00Nub_end_end
+    100430: CC_Base_L_Toe10Nub_end_end
+    100432: CC_Base_L_Toe20Nub_end_end
+    100434: CC_Base_L_Toe30Nub_end_end
+    100436: CC_Base_L_Toe40Nub_end_end
+    100438: CC_Base_L_ToeBaseShareBone_end_end
+    100440: CC_Base_L_UpperarmTwist02_end_end
+    100442: CC_Base_R_AbdominalNub_end_end
+    100444: CC_Base_R_BreastNub_end_end
+    100446: CC_Base_R_CalfTwist02_end_end
+    100448: CC_Base_R_Elbow_end_end
+    100450: CC_Base_R_Eye_end_end
+    100452: CC_Base_R_Finger0Nub_end_end
+    100454: CC_Base_R_Finger1Nub_end_end
+    100456: CC_Base_R_Finger2Nub_end_end
+    100458: CC_Base_R_Finger3Nub_end_end
+    100460: CC_Base_R_Finger4Nub_end_end
+    100462: CC_Base_R_ForearmTwist02_end_end
+    100464: CC_Base_R_Hip0Nub_end_end
+    100466: CC_Base_R_Knee_end_end
+    100468: CC_Base_R_RibsNub_end_end
+    100470: CC_Base_R_ThighTwist02_end_end
+    100472: CC_Base_R_Toe00Nub_end_end
+    100474: CC_Base_R_Toe10Nub_end_end
+    100476: CC_Base_R_Toe20Nub_end_end
+    100478: CC_Base_R_Toe30Nub_end_end
+    100480: CC_Base_R_Toe40Nub_end_end
+    100482: CC_Base_R_ToeBaseShareBone_end_end
+    100484: CC_Base_R_UpperarmTwist02_end_end
+    100486: CC_Base_Teeth01_end_end
+    100488: CC_Base_Teeth02_end_end
+    100490: CC_Base_Tongue03Nub_end_end
     400000: armature.002
     400002: CC_Base_Body.002
     400004: CC_Base_BoneRoot
@@ -399,6 +447,54 @@ ModelImporter:
     400390: RL_G6_Hair
     400392: Shirt
     400394: Underwear Bottoms
+    400396: CC_Base_HeadNub_end_end
+    400398: CC_Base_L_AbdominalNub_end_end
+    400400: CC_Base_L_BreastNub_end_end
+    400402: CC_Base_L_CalfTwist02_end_end
+    400404: CC_Base_L_Elbow_end_end
+    400406: CC_Base_L_Eye_end_end
+    400408: CC_Base_L_Finger0Nub_end_end
+    400410: CC_Base_L_Finger1Nub_end_end
+    400412: CC_Base_L_Finger2Nub_end_end
+    400414: CC_Base_L_Finger3Nub_end_end
+    400416: CC_Base_L_Finger4Nub_end_end
+    400418: CC_Base_L_ForearmTwist02_end_end
+    400420: CC_Base_L_Hip0Nub_end_end
+    400422: CC_Base_L_Knee_end_end
+    400424: CC_Base_L_RibsNub_end_end
+    400426: CC_Base_L_ThighTwist02_end_end
+    400428: CC_Base_L_Toe00Nub_end_end
+    400430: CC_Base_L_Toe10Nub_end_end
+    400432: CC_Base_L_Toe20Nub_end_end
+    400434: CC_Base_L_Toe30Nub_end_end
+    400436: CC_Base_L_Toe40Nub_end_end
+    400438: CC_Base_L_ToeBaseShareBone_end_end
+    400440: CC_Base_L_UpperarmTwist02_end_end
+    400442: CC_Base_R_AbdominalNub_end_end
+    400444: CC_Base_R_BreastNub_end_end
+    400446: CC_Base_R_CalfTwist02_end_end
+    400448: CC_Base_R_Elbow_end_end
+    400450: CC_Base_R_Eye_end_end
+    400452: CC_Base_R_Finger0Nub_end_end
+    400454: CC_Base_R_Finger1Nub_end_end
+    400456: CC_Base_R_Finger2Nub_end_end
+    400458: CC_Base_R_Finger3Nub_end_end
+    400460: CC_Base_R_Finger4Nub_end_end
+    400462: CC_Base_R_ForearmTwist02_end_end
+    400464: CC_Base_R_Hip0Nub_end_end
+    400466: CC_Base_R_Knee_end_end
+    400468: CC_Base_R_RibsNub_end_end
+    400470: CC_Base_R_ThighTwist02_end_end
+    400472: CC_Base_R_Toe00Nub_end_end
+    400474: CC_Base_R_Toe10Nub_end_end
+    400476: CC_Base_R_Toe20Nub_end_end
+    400478: CC_Base_R_Toe30Nub_end_end
+    400480: CC_Base_R_Toe40Nub_end_end
+    400482: CC_Base_R_ToeBaseShareBone_end_end
+    400484: CC_Base_R_UpperarmTwist02_end_end
+    400486: CC_Base_Teeth01_end_end
+    400488: CC_Base_Teeth02_end_end
+    400490: CC_Base_Tongue03Nub_end_end
     2100000: Untitled.066
     2100002: Untitled.067
     2100004: Untitled.065
@@ -415,6 +511,22 @@ ModelImporter:
     2100026: Untitled.054
     2100028: Untitled.055
     2100030: Untitled.056
+    2100032: Untitled.002
+    2100034: Untitled.005
+    2100036: Untitled.006
+    2100038: Untitled.013
+    2100040: Untitled.010
+    2100042: Untitled.011
+    2100044: Untitled.009
+    2100046: Untitled.014
+    2100048: Untitled.015
+    2100050: Untitled.008
+    2100052: Untitled.012
+    2100054: Untitled.007
+    2100056: Untitled.003
+    2100058: Untitled.001
+    2100060: Untitled.000
+    2100062: Untitled.004
     4300000: RL_G6_Hair
     4300002: Shirt
     4300004: Underwear Bottoms
@@ -452,6 +564,7 @@ ModelImporter:
     13700012: RL_G6_Hair
     13700014: Shirt
     13700016: Underwear Bottoms
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -1243,7 +1356,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.01
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
