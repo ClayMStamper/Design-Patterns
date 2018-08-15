@@ -22,6 +22,13 @@ public class ScenePrefab : MonoBehaviour {
         //prefab duplicated gameobject
         try
         {
+
+            if (name == "")
+            {
+                Debug.LogError("Can't commit nameless prefab");
+                return;
+            }
+
             switch (sceneCategory)
             {
                 case SceneCategory.Ambus:
