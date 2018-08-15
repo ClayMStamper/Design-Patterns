@@ -25,10 +25,10 @@ public class ScenePrefab : MonoBehaviour {
             switch (sceneCategory)
             {
                 case SceneCategory.Ambus:
-                    PrefabUtility.CreatePrefab("Assets/_Prefabs/Ambus/ScenePrefabs", gameObject);
+                    PrefabUtility.CreatePrefab(("Assets/_Prefabs/Ambus/ScenePrefabs/" + name + ".prefab"), gameObject);
                     break;
                 case SceneCategory.MCI:
-                    PrefabUtility.CreatePrefab("Assets/_Prefabs/MassCasualty/ScenePrefabs", gameObject);
+                    PrefabUtility.CreatePrefab(("Assets/_Prefabs/MassCasualty/ScenePrefabs" + name + ".prefab"), gameObject);
                     break;
                 default:
                     Debug.LogError("Scene category not recognized");
@@ -38,8 +38,6 @@ public class ScenePrefab : MonoBehaviour {
         {
             Debug.LogError("Failed to create new prefab");
         }
-
-        //destroy gameObject
 
     }
 
