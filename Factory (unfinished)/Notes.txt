@@ -1,0 +1,13 @@
+Use when a method returns one of several possible classes that share a common super class
+ - when you don't know ahead of time what class object you need
+ -  when all the potential classes are in the same subclass
+ - to centralize class selection code
+ - when you don't want the user to have to know every subclass
+ - to encapsulate object creation
+
+Ex.
+  - create a new enemy in a game
+  - random number generator picks a number assigned to a specific enemy
+  - the factory returns the enemy associated with that number
+
+  provides the ability to chose classes are chosen at run time

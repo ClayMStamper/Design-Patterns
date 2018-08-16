@@ -1,0 +1,5 @@
+Used to create object made from a bunch of other objects
+ - when you want to build an object made up from other objects
+ - when you want the creation of these parts to be independent of the main objects
+ - Hide the creation of the parts from the client so both aren't dependent
+ - The builder is the only one that knows the specifics

@@ -1,16 +1,16 @@
-Observer Pattern
+Strategy Pattern
 
-- When you need many other object to receive an update when another object updates
-    - Stock market
-        - Subject (publisher) : sends many stocks to the observers
-        - Observers (subscribers) takes the ones they want and use them
-- The Observer pattern  is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
+- Use when you want to define a class that will have one behavior that is similar to other behaviors in a list
+    - “I want a class to be able to choose from”
+        - Not flying
+        - Fly with wings
+        - Fly super fast
+    - One of several behaviors is used by the class dynamically
 
-Model:
+Define a series of algorithms, encapsulate each one (so that it’s solely responsible for its own data), and make them interchangeable. The Strategy Pattern  lets the algorithm vary independently from clients that use it.
 
-- <interface>Subject
-    - +Register (Observer) : void
-    - +Unregister (Observer) : void
-    - +NotifyObserver() : void
-- <interface> Observer
-    - +Update() : void
+Instead of using an interface in a traditional way, we use instance variables that are a subclass of of an interface.
+
+￼
+￼
+￼
