@@ -1,0 +1,16 @@
+Observer Pattern
+
+- When you need many other object to receive an update when another object updates
+    - Stock market
+        - Subject (publisher) : sends many stocks to the observers
+        - Observers (subscribers) takes the ones they want and use them
+- The Observer pattern  is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
+
+Model:
+
+- <interface>Subject
+    - +Register (Observer) : void
+    - +Unregister (Observer) : void
+    - +NotifyObserver() : void
+- <interface> Observer
+    - +Update() : void
