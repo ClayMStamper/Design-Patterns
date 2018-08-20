@@ -1230,7 +1230,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1314686550454998}
   m_LocalRotation: {x: -0.7071003, y: 0.003041625, z: 0.003041625, w: 0.7071003}
-  m_LocalPosition: {x: -0.011556741, y: 0.55285704, z: -7.460137}
+  m_LocalPosition: {x: -0.011538348, y: 0.2357143, z: -7.4571357}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4891306805592582}
@@ -3267,7 +3267,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1314686550454998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53aabeb74eda94e8e972fb5ca7af37, type: 3}
   m_Name: 
@@ -3304,11 +3304,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2fdf4bdacefe6e448138fc5b3dbf9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  heightOffset: {x: 0, y: 0, z: 0}
+  targetLocation: {x: 0, y: 0, z: 0}
+  openStartLocation: {x: 0, y: 0, z: 0}
+  closeStartLocation: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  speed: 1
+  duration: 1
+  isMoving: 0
+  isGrabbed: 0
 --- !u!114 &114055394924889732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3320,11 +3324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53aabeb74eda94e8e972fb5ca7af37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  drawerContents: []
+  openedDrawer: 0
+  closedDrawer: 0
 --- !u!114 &114075740118148466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3388,32 +3390,20 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1314686550454998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2fdf4bdacefe6e448138fc5b3dbf9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawerContents:
-  - {fileID: 1908513279948992}
-  - {fileID: 1559465144362600}
-  - {fileID: 1930573284028860}
-  - {fileID: 1184145841075198}
-  - {fileID: 1042864481869080}
-  - {fileID: 1834350596124858}
-  - {fileID: 1505918050139884}
-  - {fileID: 1618860426800892}
-  - {fileID: 1847259787718594}
-  - {fileID: 1088415319875540}
-  - {fileID: 1320529845107994}
-  - {fileID: 1911629302610072}
-  - {fileID: 1834341554167526}
-  - {fileID: 1002219050386638}
-  - {fileID: 1778397377956766}
-  - {fileID: 1696867188974518}
-  - {fileID: 1672227819224440}
-  - {fileID: 1220794899879470}
-  openedDrawer: 0
-  closedDrawer: 0
+  heightOffset: {x: 0, y: 0, z: 0}
+  targetLocation: {x: 0, y: 0, z: 0}
+  openStartLocation: {x: 0, y: 0, z: 0}
+  closeStartLocation: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  speed: 1
+  duration: 1
+  isMoving: 0
+  isGrabbed: 0
 --- !u!114 &114179303673177282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3461,15 +3451,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightOffset: {x: 0, y: 0.25, z: 0}
-  targetLocation: {x: 0, y: 0, z: 0}
-  openStartLocation: {x: 0, y: 0, z: 0}
-  closeStartLocation: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
-  speed: 1
-  duration: 1
-  isMoving: 0
-  isGrabbed: 0
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!114 &114246505695050480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3501,15 +3487,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightOffset: {x: 0, y: 0.25, z: 0}
-  targetLocation: {x: 0, y: 0, z: 0}
-  openStartLocation: {x: 0, y: 0, z: 0}
-  closeStartLocation: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
-  speed: 1
-  duration: 1
-  isMoving: 0
-  isGrabbed: 0
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!114 &114258458878553828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3569,15 +3551,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightOffset: {x: 0, y: 0.25, z: 0}
-  targetLocation: {x: 0, y: 0, z: 0}
-  openStartLocation: {x: 0, y: 0, z: 0}
-  closeStartLocation: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
-  speed: 1
-  duration: 1
-  isMoving: 0
-  isGrabbed: 0
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!114 &114403435422527360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3605,15 +3583,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightOffset: {x: 0, y: 0.25, z: 0}
-  targetLocation: {x: 0, y: 0, z: 0}
-  openStartLocation: {x: 0, y: 0, z: 0}
-  closeStartLocation: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
-  speed: 1
-  duration: 1
-  isMoving: 0
-  isGrabbed: 0
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!114 &114426711584234568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3641,15 +3615,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightOffset: {x: 0, y: 0.25, z: 0}
-  targetLocation: {x: 0, y: 0, z: 0}
-  openStartLocation: {x: 0, y: 0, z: 0}
-  closeStartLocation: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
-  speed: 1
-  duration: 1
-  isMoving: 0
-  isGrabbed: 0
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
 --- !u!114 &114480617087680444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3725,11 +3695,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2fdf4bdacefe6e448138fc5b3dbf9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  heightOffset: {x: 0, y: 0, z: 0}
+  targetLocation: {x: 0, y: 0, z: 0}
+  openStartLocation: {x: 0, y: 0, z: 0}
+  closeStartLocation: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  speed: 1
+  duration: 1
+  isMoving: 0
+  isGrabbed: 0
 --- !u!114 &114620438844683210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4000,7 +3974,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 2.46, y: 1.0639999, z: 15.448}
+  m_ConnectedAnchor: {x: 2.4569983, y: 0.62, z: 15.448}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
