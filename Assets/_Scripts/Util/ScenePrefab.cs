@@ -3,50 +3,55 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public enum SceneCategory {Ambus, MCI}
 
+/*
+ * Author: Clayton
+ * 
+ * Use Case: When adding functionality unlink prefab by right clicking this component and select the "Relink" function.
+ * 
+ * Requirements: 
+ * - Reference low lvl prefabs in serialized list
+ * - Low lvl prefabs have LowLvlPrefab.cs attached
+ * - Reference prefab link in each low lvl prefab
+ * 
+ */
 public class ScenePrefab : MonoBehaviour {
 
     [SerializeField]
-    private new string name;
+    List<GameObject> LowLvlPrefabs;
 
-    [SerializeField]
-    private SceneCategory sceneCategory;
-
-    [ContextMenu ("Set Prefab")]
-    public void SetPrefab()
+    [ContextMenu("Relink Low Lvl Prefabs")]
+    void LinkPrefabs()
     {
 
-        //duplicate gameobject
+        //disconnect high level prefab
+        PrefabUtility.DisconnectPrefabInstance(gameObject);
 
-        //prefab duplicated gameobject
-        try
+        //cycly through and relink low lvl prfabs
+        foreach (GameObject obj in LowLvlPrefabs)
         {
+            
+            //cache references for when obj is destroyed
+            GameObject newObj = null;
+            Vector3 pos = obj.transform.position;
 
-            if (name == "")
+            GameObject prefabLink = obj.GetComponent<LowLvlPrefab>().prefabLink;
+
+            try
             {
-                Debug.LogError("Can't commit nameless prefab");
-                return;
+                //relink prefab (destroys current obj)
+                newObj = PrefabUtility.ConnectGameObjectToPrefab(obj, prefabLink);
+            }
+            catch
+            {
+                Debug.LogError("Error linking Gameobject " + name + " to prefab " + prefabLink); //+ ":" + e.Message);
             }
 
-            switch (sceneCategory)
-            {
-                case SceneCategory.Ambus:
-                    PrefabUtility.CreatePrefab(("Assets/_Prefabs/Ambus/ScenePrefabs/" + name + ".prefab"), gameObject);
-                    break;
-                case SceneCategory.MCI:
-                    PrefabUtility.CreatePrefab(("Assets/_Prefabs/MassCasualty/ScenePrefabs" + name + ".prefab"), gameObject);
-                    break;
-                default:
-                    Debug.LogError("Scene category not recognized");
-                    break;
-            }
-        } catch
-        {
-            Debug.LogError("Failed to create new prefab");
+            //reset to correct position
+            newObj.transform.position = pos;
+
         }
 
     }
-
 
 }
