@@ -134,7 +134,7 @@ public class Victim : MonoBehaviour
         bodyParts[12] = new BodyPart("RFoot", BodyParts.R_Foot);
         bodyParts[13] = new BodyPart("LFoot", BodyParts.L_Foot);
 
-        if(this.tag == "victim") //BasicPeeps
+        if(this.tag == "victim") //NO LONGER built in runtime, will be built with editor
         {
             SetVictimName(this.gameObject.name);
             InitVictim(victimName, bodyParts);
@@ -215,6 +215,7 @@ public class Victim : MonoBehaviour
             Material[] materials;
             materials = r.materials;
 
+            //Move to different script - defining tag colors should be seperate from Victim
             foreach (Material mat in materials)
             {
                 switch (GetUserTag())
