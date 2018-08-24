@@ -308,7 +308,7 @@ public class OVRGrabber : MonoBehaviour
                     grabbedObject.GetComponent<ISpecialGrabbable>().Interact();
                 } else
                 {
-                    Debug.Log(grabbedObject.name + "is NOT special"); ;
+                    Debug.Log(grabbedObject.name + ": is NOT special"); ;
                 }
             }
 

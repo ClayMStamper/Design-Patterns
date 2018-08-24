@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 54772535682049868}
   - component: {fileID: 65301079372649300}
   - component: {fileID: 114455134700411964}
-  - component: {fileID: 114624094110249064}
+  - component: {fileID: 114355019599679962}
   m_Layer: 0
   m_Name: Bandage
   m_TagString: MedicalItem_Grabbable
@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439587456942424}
   m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.06889496, y: 0.132723, z: 0.021065796}
+  m_LocalPosition: {x: 0.29617488, y: 0.22792557, z: 29.51627}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4810164759559790}
@@ -245,6 +245,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.084715724, y: 0.15424037, z: 0.09075081}
   m_Center: {x: 0.019134343, y: 0.075075984, z: -0.21088457}
+--- !u!114 &114355019599679962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439587456942424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f18f64cc7c015114d911c426c464bd93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114455134700411964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -261,22 +272,3 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
---- !u!114 &114624094110249064
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1439587456942424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2fdf4bdacefe6e448138fc5b3dbf9b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heightOffset: {x: 0, y: 0.25, z: 0}
-  targetLocation: {x: 0, y: 0, z: 0}
-  openStartLocation: {x: 0, y: 0, z: 0}
-  closeStartLocation: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
-  speed: 1
-  duration: 1
-  isMoving: 0
