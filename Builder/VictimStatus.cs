@@ -1,4 +1,6 @@
-public class Victim : VictimPlan{
+//fully encapsulates victim status;
+//no other class should handle and victim status data
+public class VictimStatus : IVictimDefine{
 
 public string head{get;}
 public string torso{get;}

@@ -1,12 +1,15 @@
-public class Ethan : VictimBlueprint{
+//this is a blueprint for ethan and will be passed in as a blueprint
+//to the VictimBuilder constructor (called in Test.cs)
+public class Ethan : IVictimBlueprint{
 
-  private Victim victim;
+  private VictimStatus status;
 
   public Ethan(){
-    this.victim = new Victim()
+        this.victim = new Victim();
   }
 
-  public void BuildHead(){
+    #region these functions are what make Ethan unique. Change these to have custom victim qualities
+    public void BuildHead(){
 
     victim.SetHead ("bleeding");
 
@@ -27,9 +30,11 @@ public class Ethan : VictimBlueprint{
   public void BuildLegs(){
     victim.SetLegs ("fine");
   }
+    #endregion
 
-  public Victim GetVictim (){
-    create this.victim;
+    //returns victim status data structure
+    public VictimStatus GetStatus (){
+        return status;
   }
 
 }
