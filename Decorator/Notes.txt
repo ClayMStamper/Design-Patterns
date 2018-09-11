@@ -1,0 +1,6 @@
+
+- Decorator allows you to modify an object dynamically
+- Capabilites of inheritance with subclasses but can add functionality at runtime
+- more flexible than inheritance
+- simplifies code because you add functionality using many simple classes
+- rather than rewrite old code you extend functionality with new code
